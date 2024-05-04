@@ -2246,3 +2246,6 @@ Stacktrace:
 		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
 		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
 		at java.base/java.lang.Thread.run(Thread.java:834)
+04-May-2024 11:04:27.607 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+04-May-2024 11:04:27.607 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+04-May-2024 11:04:27.610 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@356341c9')
