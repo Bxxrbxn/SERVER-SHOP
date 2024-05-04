@@ -1,0 +1,250 @@
+04-May-2024 10:09:54.796 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 서버 버전 이름:    Apache Tomcat/9.0.87
+04-May-2024 10:09:54.799 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server 빌드 시각:  Mar 11 2024 10:12:34 UTC
+04-May-2024 10:09:54.799 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server 버전 번호:  9.0.87.0
+04-May-2024 10:09:54.799 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 운영체제 이름:     Windows 11
+04-May-2024 10:09:54.799 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 운영체제 버전:     10.0
+04-May-2024 10:09:54.799 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 아키텍처:          amd64
+04-May-2024 10:09:54.799 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 자바 홈:           C:\Program Files\Java\jdk-11
+04-May-2024 10:09:54.799 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM 버전:          11.0.19+9-LTS-224
+04-May-2024 10:09:54.799 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM 벤더:          Oracle Corporation
+04-May-2024 10:09:54.799 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:     C:\Users\LeeGeonHee\Desktop\KW univ\4-1 서버프로그램설계\SERVER-SHOP\tomcat\apache-tomcat-9.0.87
+04-May-2024 10:09:54.799 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:     C:\Users\LeeGeonHee\Desktop\KW univ\4-1 서버프로그램설계\SERVER-SHOP\tomcat\apache-tomcat-9.0.87
+04-May-2024 10:09:54.814 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.base/java.lang=ALL-UNNAMED
+04-May-2024 10:09:54.814 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.base/java.io=ALL-UNNAMED
+04-May-2024 10:09:54.814 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.base/java.util=ALL-UNNAMED
+04-May-2024 10:09:54.815 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+04-May-2024 10:09:54.815 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+04-May-2024 10:09:54.815 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.util.logging.config.file=C:\Users\LeeGeonHee\Desktop\KW univ\4-1 서버프로그램설계\SERVER-SHOP\tomcat\apache-tomcat-9.0.87\conf\logging.properties
+04-May-2024 10:09:54.815 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+04-May-2024 10:09:54.816 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djdk.tls.ephemeralDHKeySize=2048
+04-May-2024 10:09:54.816 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+04-May-2024 10:09:54.816 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Dignore.endorsed.dirs=
+04-May-2024 10:09:54.816 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Dcatalina.base=C:\Users\LeeGeonHee\Desktop\KW univ\4-1 서버프로그램설계\SERVER-SHOP\tomcat\apache-tomcat-9.0.87
+04-May-2024 10:09:54.816 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Dcatalina.home=C:\Users\LeeGeonHee\Desktop\KW univ\4-1 서버프로그램설계\SERVER-SHOP\tomcat\apache-tomcat-9.0.87
+04-May-2024 10:09:54.816 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.io.tmpdir=C:\Users\LeeGeonHee\Desktop\KW univ\4-1 서버프로그램설계\SERVER-SHOP\tomcat\apache-tomcat-9.0.87\temp
+04-May-2024 10:09:54.821 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR 버전 [1.7.4]을(를) 사용한, APR 기반 Apache Tomcat Native 라이브러리 [1.3.0]을(를) 로드했습니다.
+04-May-2024 10:09:54.821 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR 용량정보들: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+04-May-2024 10:09:54.821 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL 설정: useAprConnector [false], useOpenSSL [true]
+04-May-2024 10:09:54.835 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL이 성공적으로 초기화되었습니다: [OpenSSL 3.0.13 30 Jan 2024]
+04-May-2024 10:09:55.108 INFO [main] org.apache.coyote.AbstractProtocol.init 프로토콜 핸들러 ["http-nio-8080"]을(를) 초기화합니다.
+04-May-2024 10:09:55.133 INFO [main] org.apache.catalina.startup.Catalina.load [538] 밀리초 내에 서버가 초기화되었습니다.
+04-May-2024 10:09:55.193 INFO [main] org.apache.catalina.core.StandardService.startInternal 서비스 [Catalina]을(를) 시작합니다.
+04-May-2024 10:09:55.194 INFO [main] org.apache.catalina.core.StandardEngine.startInternal 서버 엔진을 시작합니다: [Apache Tomcat/9.0.87]
+04-May-2024 10:09:55.208 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\Users\LeeGeonHee\Desktop\KW univ\4-1 서버프로그램설계\SERVER-SHOP\tomcat\apache-tomcat-9.0.87\webapps\docs]을(를) 배치합니다.
+04-May-2024 10:09:55.901 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars 적어도 하나의 JAR가 TLD들을 찾기 위해 스캔되었으나 아무 것도 찾지 못했습니다. 스캔했으나 TLD가 없는 JAR들의 전체 목록을 보시려면, 로그 레벨을 디버그 레벨로 설정하십시오. 스캔 과정에서 불필요한 JAR들을 건너뛰면, 시스템 시작 시간과 JSP 컴파일 시간을 단축시킬 수 있습니다.
+04-May-2024 10:09:56.060 WARNING [main] org.apache.catalina.util.SessionIdGeneratorBase.createSecureRandom [SHA1PRNG] 알고리즘을 사용하여, 세션 ID를 생성하기 위한 SecureRandom 객체를 생성하는데, [134] 밀리초가 소요됐습니다.
+04-May-2024 10:09:56.085 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\Users\LeeGeonHee\Desktop\KW univ\4-1 서버프로그램설계\SERVER-SHOP\tomcat\apache-tomcat-9.0.87\webapps\docs]에 대한 배치가 [878] 밀리초에 완료되었습니다.
+04-May-2024 10:09:56.085 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\Users\LeeGeonHee\Desktop\KW univ\4-1 서버프로그램설계\SERVER-SHOP\tomcat\apache-tomcat-9.0.87\webapps\examples]을(를) 배치합니다.
+04-May-2024 10:09:56.685 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars 적어도 하나의 JAR가 TLD들을 찾기 위해 스캔되었으나 아무 것도 찾지 못했습니다. 스캔했으나 TLD가 없는 JAR들의 전체 목록을 보시려면, 로그 레벨을 디버그 레벨로 설정하십시오. 스캔 과정에서 불필요한 JAR들을 건너뛰면, 시스템 시작 시간과 JSP 컴파일 시간을 단축시킬 수 있습니다.
+04-May-2024 10:09:56.725 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\Users\LeeGeonHee\Desktop\KW univ\4-1 서버프로그램설계\SERVER-SHOP\tomcat\apache-tomcat-9.0.87\webapps\examples]에 대한 배치가 [639] 밀리초에 완료되었습니다.
+04-May-2024 10:09:56.725 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\Users\LeeGeonHee\Desktop\KW univ\4-1 서버프로그램설계\SERVER-SHOP\tomcat\apache-tomcat-9.0.87\webapps\host-manager]을(를) 배치합니다.
+04-May-2024 10:09:57.115 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars 적어도 하나의 JAR가 TLD들을 찾기 위해 스캔되었으나 아무 것도 찾지 못했습니다. 스캔했으나 TLD가 없는 JAR들의 전체 목록을 보시려면, 로그 레벨을 디버그 레벨로 설정하십시오. 스캔 과정에서 불필요한 JAR들을 건너뛰면, 시스템 시작 시간과 JSP 컴파일 시간을 단축시킬 수 있습니다.
+04-May-2024 10:09:57.124 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\Users\LeeGeonHee\Desktop\KW univ\4-1 서버프로그램설계\SERVER-SHOP\tomcat\apache-tomcat-9.0.87\webapps\host-manager]에 대한 배치가 [399] 밀리초에 완료되었습니다.
+04-May-2024 10:09:57.125 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\Users\LeeGeonHee\Desktop\KW univ\4-1 서버프로그램설계\SERVER-SHOP\tomcat\apache-tomcat-9.0.87\webapps\manager]을(를) 배치합니다.
+04-May-2024 10:09:57.513 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars 적어도 하나의 JAR가 TLD들을 찾기 위해 스캔되었으나 아무 것도 찾지 못했습니다. 스캔했으나 TLD가 없는 JAR들의 전체 목록을 보시려면, 로그 레벨을 디버그 레벨로 설정하십시오. 스캔 과정에서 불필요한 JAR들을 건너뛰면, 시스템 시작 시간과 JSP 컴파일 시간을 단축시킬 수 있습니다.
+04-May-2024 10:09:57.516 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\Users\LeeGeonHee\Desktop\KW univ\4-1 서버프로그램설계\SERVER-SHOP\tomcat\apache-tomcat-9.0.87\webapps\manager]에 대한 배치가 [392] 밀리초에 완료되었습니다.
+04-May-2024 10:09:57.517 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\Users\LeeGeonHee\Desktop\KW univ\4-1 서버프로그램설계\SERVER-SHOP\tomcat\apache-tomcat-9.0.87\webapps\ROOT]을(를) 배치합니다.
+04-May-2024 10:09:57.837 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars 적어도 하나의 JAR가 TLD들을 찾기 위해 스캔되었으나 아무 것도 찾지 못했습니다. 스캔했으나 TLD가 없는 JAR들의 전체 목록을 보시려면, 로그 레벨을 디버그 레벨로 설정하십시오. 스캔 과정에서 불필요한 JAR들을 건너뛰면, 시스템 시작 시간과 JSP 컴파일 시간을 단축시킬 수 있습니다.
+04-May-2024 10:09:57.839 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\Users\LeeGeonHee\Desktop\KW univ\4-1 서버프로그램설계\SERVER-SHOP\tomcat\apache-tomcat-9.0.87\webapps\ROOT]에 대한 배치가 [321] 밀리초에 완료되었습니다.
+04-May-2024 10:09:57.844 INFO [main] org.apache.coyote.AbstractProtocol.start 프로토콜 핸들러 ["http-nio-8080"]을(를) 시작합니다.
+04-May-2024 10:09:57.982 INFO [main] org.apache.catalina.startup.Catalina.start 서버가 [2848] 밀리초 내에 시작되었습니다.
+04-May-2024 10:13:27.048 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 서버 버전 이름:    Apache Tomcat/9.0.87
+04-May-2024 10:13:27.050 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server 빌드 시각:  Mar 11 2024 10:12:34 UTC
+04-May-2024 10:13:27.050 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server 버전 번호:  9.0.87.0
+04-May-2024 10:13:27.051 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 운영체제 이름:     Windows 11
+04-May-2024 10:13:27.051 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 운영체제 버전:     10.0
+04-May-2024 10:13:27.051 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 아키텍처:          amd64
+04-May-2024 10:13:27.051 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 자바 홈:           C:\Program Files\Java\jdk-11
+04-May-2024 10:13:27.051 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM 버전:          11.0.19+9-LTS-224
+04-May-2024 10:13:27.052 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM 벤더:          Oracle Corporation
+04-May-2024 10:13:27.052 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:     C:\Users\LeeGeonHee\Desktop\KW univ\4-1 서버프로그램설계\SERVER-SHOP\tomcat\apache-tomcat-9.0.87
+04-May-2024 10:13:27.052 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:     C:\Users\LeeGeonHee\Desktop\KW univ\4-1 서버프로그램설계\SERVER-SHOP\tomcat\apache-tomcat-9.0.87
+04-May-2024 10:13:27.061 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.base/java.lang=ALL-UNNAMED
+04-May-2024 10:13:27.061 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.base/java.io=ALL-UNNAMED
+04-May-2024 10:13:27.061 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.base/java.util=ALL-UNNAMED
+04-May-2024 10:13:27.062 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+04-May-2024 10:13:27.062 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+04-May-2024 10:13:27.063 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.util.logging.config.file=C:\Users\LeeGeonHee\Desktop\KW univ\4-1 서버프로그램설계\SERVER-SHOP\tomcat\apache-tomcat-9.0.87\conf\logging.properties
+04-May-2024 10:13:27.063 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+04-May-2024 10:13:27.063 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djdk.tls.ephemeralDHKeySize=2048
+04-May-2024 10:13:27.063 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+04-May-2024 10:13:27.063 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Dignore.endorsed.dirs=
+04-May-2024 10:13:27.064 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Dcatalina.base=C:\Users\LeeGeonHee\Desktop\KW univ\4-1 서버프로그램설계\SERVER-SHOP\tomcat\apache-tomcat-9.0.87
+04-May-2024 10:13:27.064 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Dcatalina.home=C:\Users\LeeGeonHee\Desktop\KW univ\4-1 서버프로그램설계\SERVER-SHOP\tomcat\apache-tomcat-9.0.87
+04-May-2024 10:13:27.064 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.io.tmpdir=C:\Users\LeeGeonHee\Desktop\KW univ\4-1 서버프로그램설계\SERVER-SHOP\tomcat\apache-tomcat-9.0.87\temp
+04-May-2024 10:13:27.067 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR 버전 [1.7.4]을(를) 사용한, APR 기반 Apache Tomcat Native 라이브러리 [1.3.0]을(를) 로드했습니다.
+04-May-2024 10:13:27.067 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR 용량정보들: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+04-May-2024 10:13:27.067 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL 설정: useAprConnector [false], useOpenSSL [true]
+04-May-2024 10:13:27.073 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL이 성공적으로 초기화되었습니다: [OpenSSL 3.0.13 30 Jan 2024]
+04-May-2024 10:13:27.344 INFO [main] org.apache.coyote.AbstractProtocol.init 프로토콜 핸들러 ["http-nio-8080"]을(를) 초기화합니다.
+04-May-2024 10:13:27.374 INFO [main] org.apache.catalina.startup.Catalina.load [493] 밀리초 내에 서버가 초기화되었습니다.
+04-May-2024 10:13:27.442 INFO [main] org.apache.catalina.core.StandardService.startInternal 서비스 [Catalina]을(를) 시작합니다.
+04-May-2024 10:13:27.442 INFO [main] org.apache.catalina.core.StandardEngine.startInternal 서버 엔진을 시작합니다: [Apache Tomcat/9.0.87]
+04-May-2024 10:13:27.450 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\Users\LeeGeonHee\Desktop\KW univ\4-1 서버프로그램설계\SERVER-SHOP\tomcat\apache-tomcat-9.0.87\webapps\docs]을(를) 배치합니다.
+04-May-2024 10:13:28.140 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars 적어도 하나의 JAR가 TLD들을 찾기 위해 스캔되었으나 아무 것도 찾지 못했습니다. 스캔했으나 TLD가 없는 JAR들의 전체 목록을 보시려면, 로그 레벨을 디버그 레벨로 설정하십시오. 스캔 과정에서 불필요한 JAR들을 건너뛰면, 시스템 시작 시간과 JSP 컴파일 시간을 단축시킬 수 있습니다.
+04-May-2024 10:13:28.303 WARNING [main] org.apache.catalina.util.SessionIdGeneratorBase.createSecureRandom [SHA1PRNG] 알고리즘을 사용하여, 세션 ID를 생성하기 위한 SecureRandom 객체를 생성하는데, [138] 밀리초가 소요됐습니다.
+04-May-2024 10:13:28.323 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\Users\LeeGeonHee\Desktop\KW univ\4-1 서버프로그램설계\SERVER-SHOP\tomcat\apache-tomcat-9.0.87\webapps\docs]에 대한 배치가 [873] 밀리초에 완료되었습니다.
+04-May-2024 10:13:28.323 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\Users\LeeGeonHee\Desktop\KW univ\4-1 서버프로그램설계\SERVER-SHOP\tomcat\apache-tomcat-9.0.87\webapps\examples]을(를) 배치합니다.
+04-May-2024 10:13:28.898 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars 적어도 하나의 JAR가 TLD들을 찾기 위해 스캔되었으나 아무 것도 찾지 못했습니다. 스캔했으나 TLD가 없는 JAR들의 전체 목록을 보시려면, 로그 레벨을 디버그 레벨로 설정하십시오. 스캔 과정에서 불필요한 JAR들을 건너뛰면, 시스템 시작 시간과 JSP 컴파일 시간을 단축시킬 수 있습니다.
+04-May-2024 10:13:28.953 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\Users\LeeGeonHee\Desktop\KW univ\4-1 서버프로그램설계\SERVER-SHOP\tomcat\apache-tomcat-9.0.87\webapps\examples]에 대한 배치가 [630] 밀리초에 완료되었습니다.
+04-May-2024 10:13:28.953 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\Users\LeeGeonHee\Desktop\KW univ\4-1 서버프로그램설계\SERVER-SHOP\tomcat\apache-tomcat-9.0.87\webapps\host-manager]을(를) 배치합니다.
+04-May-2024 10:13:29.339 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars 적어도 하나의 JAR가 TLD들을 찾기 위해 스캔되었으나 아무 것도 찾지 못했습니다. 스캔했으나 TLD가 없는 JAR들의 전체 목록을 보시려면, 로그 레벨을 디버그 레벨로 설정하십시오. 스캔 과정에서 불필요한 JAR들을 건너뛰면, 시스템 시작 시간과 JSP 컴파일 시간을 단축시킬 수 있습니다.
+04-May-2024 10:13:29.345 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\Users\LeeGeonHee\Desktop\KW univ\4-1 서버프로그램설계\SERVER-SHOP\tomcat\apache-tomcat-9.0.87\webapps\host-manager]에 대한 배치가 [392] 밀리초에 완료되었습니다.
+04-May-2024 10:13:29.346 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\Users\LeeGeonHee\Desktop\KW univ\4-1 서버프로그램설계\SERVER-SHOP\tomcat\apache-tomcat-9.0.87\webapps\manager]을(를) 배치합니다.
+04-May-2024 10:13:29.658 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars 적어도 하나의 JAR가 TLD들을 찾기 위해 스캔되었으나 아무 것도 찾지 못했습니다. 스캔했으나 TLD가 없는 JAR들의 전체 목록을 보시려면, 로그 레벨을 디버그 레벨로 설정하십시오. 스캔 과정에서 불필요한 JAR들을 건너뛰면, 시스템 시작 시간과 JSP 컴파일 시간을 단축시킬 수 있습니다.
+04-May-2024 10:13:29.661 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\Users\LeeGeonHee\Desktop\KW univ\4-1 서버프로그램설계\SERVER-SHOP\tomcat\apache-tomcat-9.0.87\webapps\manager]에 대한 배치가 [315] 밀리초에 완료되었습니다.
+04-May-2024 10:13:29.661 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\Users\LeeGeonHee\Desktop\KW univ\4-1 서버프로그램설계\SERVER-SHOP\tomcat\apache-tomcat-9.0.87\webapps\ROOT]을(를) 배치합니다.
+04-May-2024 10:13:29.919 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars 적어도 하나의 JAR가 TLD들을 찾기 위해 스캔되었으나 아무 것도 찾지 못했습니다. 스캔했으나 TLD가 없는 JAR들의 전체 목록을 보시려면, 로그 레벨을 디버그 레벨로 설정하십시오. 스캔 과정에서 불필요한 JAR들을 건너뛰면, 시스템 시작 시간과 JSP 컴파일 시간을 단축시킬 수 있습니다.
+04-May-2024 10:13:29.921 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\Users\LeeGeonHee\Desktop\KW univ\4-1 서버프로그램설계\SERVER-SHOP\tomcat\apache-tomcat-9.0.87\webapps\ROOT]에 대한 배치가 [260] 밀리초에 완료되었습니다.
+04-May-2024 10:13:29.929 INFO [main] org.apache.coyote.AbstractProtocol.start 프로토콜 핸들러 ["http-nio-8080"]을(를) 시작합니다.
+04-May-2024 10:13:30.061 INFO [main] org.apache.catalina.startup.Catalina.start 서버가 [2686] 밀리초 내에 시작되었습니다.
+04-May-2024 10:23:23.812 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 서버 버전 이름:    Apache Tomcat/9.0.87
+04-May-2024 10:23:23.815 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server 빌드 시각:  Mar 11 2024 10:12:34 UTC
+04-May-2024 10:23:23.815 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server 버전 번호:  9.0.87.0
+04-May-2024 10:23:23.815 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 운영체제 이름:     Windows 11
+04-May-2024 10:23:23.815 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 운영체제 버전:     10.0
+04-May-2024 10:23:23.816 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 아키텍처:          amd64
+04-May-2024 10:23:23.816 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 자바 홈:           C:\Program Files\Java\jdk-11
+04-May-2024 10:23:23.816 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM 버전:          11.0.19+9-LTS-224
+04-May-2024 10:23:23.816 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM 벤더:          Oracle Corporation
+04-May-2024 10:23:23.816 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:     C:\Users\LeeGeonHee\Desktop\KW univ\4-1 서버프로그램설계\SERVER-SHOP\tomcat\apache-tomcat-9.0.87
+04-May-2024 10:23:23.816 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:     C:\Users\LeeGeonHee\Desktop\KW univ\4-1 서버프로그램설계\SERVER-SHOP\tomcat\apache-tomcat-9.0.87
+04-May-2024 10:23:23.825 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.base/java.lang=ALL-UNNAMED
+04-May-2024 10:23:23.825 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.base/java.io=ALL-UNNAMED
+04-May-2024 10:23:23.826 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.base/java.util=ALL-UNNAMED
+04-May-2024 10:23:23.826 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+04-May-2024 10:23:23.826 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+04-May-2024 10:23:23.827 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.util.logging.config.file=C:\Users\LeeGeonHee\Desktop\KW univ\4-1 서버프로그램설계\SERVER-SHOP\tomcat\apache-tomcat-9.0.87\conf\logging.properties
+04-May-2024 10:23:23.827 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+04-May-2024 10:23:23.827 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djdk.tls.ephemeralDHKeySize=2048
+04-May-2024 10:23:23.827 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+04-May-2024 10:23:23.827 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Dignore.endorsed.dirs=
+04-May-2024 10:23:23.828 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Dcatalina.base=C:\Users\LeeGeonHee\Desktop\KW univ\4-1 서버프로그램설계\SERVER-SHOP\tomcat\apache-tomcat-9.0.87
+04-May-2024 10:23:23.828 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Dcatalina.home=C:\Users\LeeGeonHee\Desktop\KW univ\4-1 서버프로그램설계\SERVER-SHOP\tomcat\apache-tomcat-9.0.87
+04-May-2024 10:23:23.828 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.io.tmpdir=C:\Users\LeeGeonHee\Desktop\KW univ\4-1 서버프로그램설계\SERVER-SHOP\tomcat\apache-tomcat-9.0.87\temp
+04-May-2024 10:23:23.831 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR 버전 [1.7.4]을(를) 사용한, APR 기반 Apache Tomcat Native 라이브러리 [1.3.0]을(를) 로드했습니다.
+04-May-2024 10:23:23.831 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR 용량정보들: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+04-May-2024 10:23:23.831 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL 설정: useAprConnector [false], useOpenSSL [true]
+04-May-2024 10:23:23.836 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL이 성공적으로 초기화되었습니다: [OpenSSL 3.0.13 30 Jan 2024]
+04-May-2024 10:23:24.078 INFO [main] org.apache.coyote.AbstractProtocol.init 프로토콜 핸들러 ["http-nio-8080"]을(를) 초기화합니다.
+04-May-2024 10:23:24.098 INFO [main] org.apache.catalina.startup.Catalina.load [458] 밀리초 내에 서버가 초기화되었습니다.
+04-May-2024 10:23:24.156 INFO [main] org.apache.catalina.core.StandardService.startInternal 서비스 [Catalina]을(를) 시작합니다.
+04-May-2024 10:23:24.156 INFO [main] org.apache.catalina.core.StandardEngine.startInternal 서버 엔진을 시작합니다: [Apache Tomcat/9.0.87]
+04-May-2024 10:23:24.167 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\Users\LeeGeonHee\Desktop\KW univ\4-1 서버프로그램설계\SERVER-SHOP\tomcat\apache-tomcat-9.0.87\webapps\docs]을(를) 배치합니다.
+04-May-2024 10:23:24.853 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars 적어도 하나의 JAR가 TLD들을 찾기 위해 스캔되었으나 아무 것도 찾지 못했습니다. 스캔했으나 TLD가 없는 JAR들의 전체 목록을 보시려면, 로그 레벨을 디버그 레벨로 설정하십시오. 스캔 과정에서 불필요한 JAR들을 건너뛰면, 시스템 시작 시간과 JSP 컴파일 시간을 단축시킬 수 있습니다.
+04-May-2024 10:23:25.022 WARNING [main] org.apache.catalina.util.SessionIdGeneratorBase.createSecureRandom [SHA1PRNG] 알고리즘을 사용하여, 세션 ID를 생성하기 위한 SecureRandom 객체를 생성하는데, [148] 밀리초가 소요됐습니다.
+04-May-2024 10:23:25.042 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\Users\LeeGeonHee\Desktop\KW univ\4-1 서버프로그램설계\SERVER-SHOP\tomcat\apache-tomcat-9.0.87\webapps\docs]에 대한 배치가 [875] 밀리초에 완료되었습니다.
+04-May-2024 10:23:25.043 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\Users\LeeGeonHee\Desktop\KW univ\4-1 서버프로그램설계\SERVER-SHOP\tomcat\apache-tomcat-9.0.87\webapps\examples]을(를) 배치합니다.
+04-May-2024 10:23:25.623 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars 적어도 하나의 JAR가 TLD들을 찾기 위해 스캔되었으나 아무 것도 찾지 못했습니다. 스캔했으나 TLD가 없는 JAR들의 전체 목록을 보시려면, 로그 레벨을 디버그 레벨로 설정하십시오. 스캔 과정에서 불필요한 JAR들을 건너뛰면, 시스템 시작 시간과 JSP 컴파일 시간을 단축시킬 수 있습니다.
+04-May-2024 10:23:25.686 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\Users\LeeGeonHee\Desktop\KW univ\4-1 서버프로그램설계\SERVER-SHOP\tomcat\apache-tomcat-9.0.87\webapps\examples]에 대한 배치가 [643] 밀리초에 완료되었습니다.
+04-May-2024 10:23:25.686 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\Users\LeeGeonHee\Desktop\KW univ\4-1 서버프로그램설계\SERVER-SHOP\tomcat\apache-tomcat-9.0.87\webapps\host-manager]을(를) 배치합니다.
+04-May-2024 10:23:26.145 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars 적어도 하나의 JAR가 TLD들을 찾기 위해 스캔되었으나 아무 것도 찾지 못했습니다. 스캔했으나 TLD가 없는 JAR들의 전체 목록을 보시려면, 로그 레벨을 디버그 레벨로 설정하십시오. 스캔 과정에서 불필요한 JAR들을 건너뛰면, 시스템 시작 시간과 JSP 컴파일 시간을 단축시킬 수 있습니다.
+04-May-2024 10:23:26.152 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\Users\LeeGeonHee\Desktop\KW univ\4-1 서버프로그램설계\SERVER-SHOP\tomcat\apache-tomcat-9.0.87\webapps\host-manager]에 대한 배치가 [466] 밀리초에 완료되었습니다.
+04-May-2024 10:23:26.152 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\Users\LeeGeonHee\Desktop\KW univ\4-1 서버프로그램설계\SERVER-SHOP\tomcat\apache-tomcat-9.0.87\webapps\manager]을(를) 배치합니다.
+04-May-2024 10:23:26.520 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars 적어도 하나의 JAR가 TLD들을 찾기 위해 스캔되었으나 아무 것도 찾지 못했습니다. 스캔했으나 TLD가 없는 JAR들의 전체 목록을 보시려면, 로그 레벨을 디버그 레벨로 설정하십시오. 스캔 과정에서 불필요한 JAR들을 건너뛰면, 시스템 시작 시간과 JSP 컴파일 시간을 단축시킬 수 있습니다.
+04-May-2024 10:23:26.522 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\Users\LeeGeonHee\Desktop\KW univ\4-1 서버프로그램설계\SERVER-SHOP\tomcat\apache-tomcat-9.0.87\webapps\manager]에 대한 배치가 [370] 밀리초에 완료되었습니다.
+04-May-2024 10:23:26.523 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\Users\LeeGeonHee\Desktop\KW univ\4-1 서버프로그램설계\SERVER-SHOP\tomcat\apache-tomcat-9.0.87\webapps\ROOT]을(를) 배치합니다.
+04-May-2024 10:23:26.783 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars 적어도 하나의 JAR가 TLD들을 찾기 위해 스캔되었으나 아무 것도 찾지 못했습니다. 스캔했으나 TLD가 없는 JAR들의 전체 목록을 보시려면, 로그 레벨을 디버그 레벨로 설정하십시오. 스캔 과정에서 불필요한 JAR들을 건너뛰면, 시스템 시작 시간과 JSP 컴파일 시간을 단축시킬 수 있습니다.
+04-May-2024 10:23:26.785 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\Users\LeeGeonHee\Desktop\KW univ\4-1 서버프로그램설계\SERVER-SHOP\tomcat\apache-tomcat-9.0.87\webapps\ROOT]에 대한 배치가 [262] 밀리초에 완료되었습니다.
+04-May-2024 10:23:26.789 INFO [main] org.apache.coyote.AbstractProtocol.start 프로토콜 핸들러 ["http-nio-8080"]을(를) 시작합니다.
+04-May-2024 10:23:26.926 INFO [main] org.apache.catalina.startup.Catalina.start 서버가 [2827] 밀리초 내에 시작되었습니다.
+04-May-2024 10:30:00.975 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 서버 버전 이름:    Apache Tomcat/9.0.87
+04-May-2024 10:30:00.978 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server 빌드 시각:  Mar 11 2024 10:12:34 UTC
+04-May-2024 10:30:00.978 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server 버전 번호:  9.0.87.0
+04-May-2024 10:30:00.978 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 운영체제 이름:     Windows 11
+04-May-2024 10:30:00.979 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 운영체제 버전:     10.0
+04-May-2024 10:30:00.979 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 아키텍처:          amd64
+04-May-2024 10:30:00.979 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 자바 홈:           C:\Program Files\Java\jdk-11
+04-May-2024 10:30:00.979 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM 버전:          11.0.19+9-LTS-224
+04-May-2024 10:30:00.979 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM 벤더:          Oracle Corporation
+04-May-2024 10:30:00.980 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:     C:\Users\LeeGeonHee\Desktop\KW univ\4-1 서버프로그램설계\SERVER-SHOP\tomcat\apache-tomcat-9.0.87
+04-May-2024 10:30:00.980 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:     C:\Users\LeeGeonHee\Desktop\KW univ\4-1 서버프로그램설계\SERVER-SHOP\tomcat\apache-tomcat-9.0.87
+04-May-2024 10:30:00.990 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.base/java.lang=ALL-UNNAMED
+04-May-2024 10:30:00.990 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.base/java.io=ALL-UNNAMED
+04-May-2024 10:30:00.990 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.base/java.util=ALL-UNNAMED
+04-May-2024 10:30:00.991 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+04-May-2024 10:30:00.991 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+04-May-2024 10:30:00.991 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.util.logging.config.file=C:\Users\LeeGeonHee\Desktop\KW univ\4-1 서버프로그램설계\SERVER-SHOP\tomcat\apache-tomcat-9.0.87\conf\logging.properties
+04-May-2024 10:30:00.991 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+04-May-2024 10:30:00.991 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djdk.tls.ephemeralDHKeySize=2048
+04-May-2024 10:30:00.992 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+04-May-2024 10:30:00.992 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Dignore.endorsed.dirs=
+04-May-2024 10:30:00.992 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Dcatalina.base=C:\Users\LeeGeonHee\Desktop\KW univ\4-1 서버프로그램설계\SERVER-SHOP\tomcat\apache-tomcat-9.0.87
+04-May-2024 10:30:00.992 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Dcatalina.home=C:\Users\LeeGeonHee\Desktop\KW univ\4-1 서버프로그램설계\SERVER-SHOP\tomcat\apache-tomcat-9.0.87
+04-May-2024 10:30:00.992 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.io.tmpdir=C:\Users\LeeGeonHee\Desktop\KW univ\4-1 서버프로그램설계\SERVER-SHOP\tomcat\apache-tomcat-9.0.87\temp
+04-May-2024 10:30:00.995 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR 버전 [1.7.4]을(를) 사용한, APR 기반 Apache Tomcat Native 라이브러리 [1.3.0]을(를) 로드했습니다.
+04-May-2024 10:30:00.996 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR 용량정보들: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+04-May-2024 10:30:00.996 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL 설정: useAprConnector [false], useOpenSSL [true]
+04-May-2024 10:30:01.000 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL이 성공적으로 초기화되었습니다: [OpenSSL 3.0.13 30 Jan 2024]
+04-May-2024 10:30:01.262 INFO [main] org.apache.coyote.AbstractProtocol.init 프로토콜 핸들러 ["http-nio-8080"]을(를) 초기화합니다.
+04-May-2024 10:30:01.282 INFO [main] org.apache.catalina.startup.Catalina.load [491] 밀리초 내에 서버가 초기화되었습니다.
+04-May-2024 10:30:01.351 INFO [main] org.apache.catalina.core.StandardService.startInternal 서비스 [Catalina]을(를) 시작합니다.
+04-May-2024 10:30:01.351 INFO [main] org.apache.catalina.core.StandardEngine.startInternal 서버 엔진을 시작합니다: [Apache Tomcat/9.0.87]
+04-May-2024 10:30:01.364 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\Users\LeeGeonHee\Desktop\KW univ\4-1 서버프로그램설계\SERVER-SHOP\tomcat\apache-tomcat-9.0.87\webapps\docs]을(를) 배치합니다.
+04-May-2024 10:30:02.016 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars 적어도 하나의 JAR가 TLD들을 찾기 위해 스캔되었으나 아무 것도 찾지 못했습니다. 스캔했으나 TLD가 없는 JAR들의 전체 목록을 보시려면, 로그 레벨을 디버그 레벨로 설정하십시오. 스캔 과정에서 불필요한 JAR들을 건너뛰면, 시스템 시작 시간과 JSP 컴파일 시간을 단축시킬 수 있습니다.
+04-May-2024 10:30:02.154 WARNING [main] org.apache.catalina.util.SessionIdGeneratorBase.createSecureRandom [SHA1PRNG] 알고리즘을 사용하여, 세션 ID를 생성하기 위한 SecureRandom 객체를 생성하는데, [118] 밀리초가 소요됐습니다.
+04-May-2024 10:30:02.172 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\Users\LeeGeonHee\Desktop\KW univ\4-1 서버프로그램설계\SERVER-SHOP\tomcat\apache-tomcat-9.0.87\webapps\docs]에 대한 배치가 [808] 밀리초에 완료되었습니다.
+04-May-2024 10:30:02.173 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\Users\LeeGeonHee\Desktop\KW univ\4-1 서버프로그램설계\SERVER-SHOP\tomcat\apache-tomcat-9.0.87\webapps\examples]을(를) 배치합니다.
+04-May-2024 10:30:02.697 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars 적어도 하나의 JAR가 TLD들을 찾기 위해 스캔되었으나 아무 것도 찾지 못했습니다. 스캔했으나 TLD가 없는 JAR들의 전체 목록을 보시려면, 로그 레벨을 디버그 레벨로 설정하십시오. 스캔 과정에서 불필요한 JAR들을 건너뛰면, 시스템 시작 시간과 JSP 컴파일 시간을 단축시킬 수 있습니다.
+04-May-2024 10:30:02.746 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\Users\LeeGeonHee\Desktop\KW univ\4-1 서버프로그램설계\SERVER-SHOP\tomcat\apache-tomcat-9.0.87\webapps\examples]에 대한 배치가 [573] 밀리초에 완료되었습니다.
+04-May-2024 10:30:02.747 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\Users\LeeGeonHee\Desktop\KW univ\4-1 서버프로그램설계\SERVER-SHOP\tomcat\apache-tomcat-9.0.87\webapps\host-manager]을(를) 배치합니다.
+04-May-2024 10:30:03.126 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars 적어도 하나의 JAR가 TLD들을 찾기 위해 스캔되었으나 아무 것도 찾지 못했습니다. 스캔했으나 TLD가 없는 JAR들의 전체 목록을 보시려면, 로그 레벨을 디버그 레벨로 설정하십시오. 스캔 과정에서 불필요한 JAR들을 건너뛰면, 시스템 시작 시간과 JSP 컴파일 시간을 단축시킬 수 있습니다.
+04-May-2024 10:30:03.133 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\Users\LeeGeonHee\Desktop\KW univ\4-1 서버프로그램설계\SERVER-SHOP\tomcat\apache-tomcat-9.0.87\webapps\host-manager]에 대한 배치가 [386] 밀리초에 완료되었습니다.
+04-May-2024 10:30:03.134 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\Users\LeeGeonHee\Desktop\KW univ\4-1 서버프로그램설계\SERVER-SHOP\tomcat\apache-tomcat-9.0.87\webapps\manager]을(를) 배치합니다.
+04-May-2024 10:30:03.435 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars 적어도 하나의 JAR가 TLD들을 찾기 위해 스캔되었으나 아무 것도 찾지 못했습니다. 스캔했으나 TLD가 없는 JAR들의 전체 목록을 보시려면, 로그 레벨을 디버그 레벨로 설정하십시오. 스캔 과정에서 불필요한 JAR들을 건너뛰면, 시스템 시작 시간과 JSP 컴파일 시간을 단축시킬 수 있습니다.
+04-May-2024 10:30:03.438 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\Users\LeeGeonHee\Desktop\KW univ\4-1 서버프로그램설계\SERVER-SHOP\tomcat\apache-tomcat-9.0.87\webapps\manager]에 대한 배치가 [303] 밀리초에 완료되었습니다.
+04-May-2024 10:30:03.438 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\Users\LeeGeonHee\Desktop\KW univ\4-1 서버프로그램설계\SERVER-SHOP\tomcat\apache-tomcat-9.0.87\webapps\ROOT]을(를) 배치합니다.
+04-May-2024 10:30:03.721 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars 적어도 하나의 JAR가 TLD들을 찾기 위해 스캔되었으나 아무 것도 찾지 못했습니다. 스캔했으나 TLD가 없는 JAR들의 전체 목록을 보시려면, 로그 레벨을 디버그 레벨로 설정하십시오. 스캔 과정에서 불필요한 JAR들을 건너뛰면, 시스템 시작 시간과 JSP 컴파일 시간을 단축시킬 수 있습니다.
+04-May-2024 10:30:03.723 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\Users\LeeGeonHee\Desktop\KW univ\4-1 서버프로그램설계\SERVER-SHOP\tomcat\apache-tomcat-9.0.87\webapps\ROOT]에 대한 배치가 [285] 밀리초에 완료되었습니다.
+04-May-2024 10:30:03.729 INFO [main] org.apache.coyote.AbstractProtocol.start 프로토콜 핸들러 ["http-nio-8080"]을(를) 시작합니다.
+04-May-2024 10:30:03.861 INFO [main] org.apache.catalina.startup.Catalina.start 서버가 [2578] 밀리초 내에 시작되었습니다.
+04-May-2024 10:43:38.537 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 서버 버전 이름:    Apache Tomcat/9.0.87
+04-May-2024 10:43:38.540 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server 빌드 시각:  Mar 11 2024 10:12:34 UTC
+04-May-2024 10:43:38.540 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server 버전 번호:  9.0.87.0
+04-May-2024 10:43:38.540 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 운영체제 이름:     Windows 11
+04-May-2024 10:43:38.540 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 운영체제 버전:     10.0
+04-May-2024 10:43:38.540 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 아키텍처:          amd64
+04-May-2024 10:43:38.541 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 자바 홈:           C:\Program Files\Java\jdk-11
+04-May-2024 10:43:38.541 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM 버전:          11.0.19+9-LTS-224
+04-May-2024 10:43:38.541 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM 벤더:          Oracle Corporation
+04-May-2024 10:43:38.541 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:     C:\Users\LeeGeonHee\Desktop\KW univ\4-1 서버프로그램설계\SERVER-SHOP\tomcat\apache-tomcat-9.0.87
+04-May-2024 10:43:38.541 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:     C:\Users\LeeGeonHee\Desktop\KW univ\4-1 서버프로그램설계\SERVER-SHOP\tomcat\apache-tomcat-9.0.87
+04-May-2024 10:43:38.550 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.base/java.lang=ALL-UNNAMED
+04-May-2024 10:43:38.552 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.base/java.io=ALL-UNNAMED
+04-May-2024 10:43:38.552 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.base/java.util=ALL-UNNAMED
+04-May-2024 10:43:38.552 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+04-May-2024 10:43:38.552 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+04-May-2024 10:43:38.553 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.util.logging.config.file=C:\Users\LeeGeonHee\Desktop\KW univ\4-1 서버프로그램설계\SERVER-SHOP\tomcat\apache-tomcat-9.0.87\conf\logging.properties
+04-May-2024 10:43:38.553 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+04-May-2024 10:43:38.553 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djdk.tls.ephemeralDHKeySize=2048
+04-May-2024 10:43:38.553 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+04-May-2024 10:43:38.553 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Dignore.endorsed.dirs=
+04-May-2024 10:43:38.554 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Dcatalina.base=C:\Users\LeeGeonHee\Desktop\KW univ\4-1 서버프로그램설계\SERVER-SHOP\tomcat\apache-tomcat-9.0.87
+04-May-2024 10:43:38.554 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Dcatalina.home=C:\Users\LeeGeonHee\Desktop\KW univ\4-1 서버프로그램설계\SERVER-SHOP\tomcat\apache-tomcat-9.0.87
+04-May-2024 10:43:38.554 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.io.tmpdir=C:\Users\LeeGeonHee\Desktop\KW univ\4-1 서버프로그램설계\SERVER-SHOP\tomcat\apache-tomcat-9.0.87\temp
+04-May-2024 10:43:38.557 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR 버전 [1.7.4]을(를) 사용한, APR 기반 Apache Tomcat Native 라이브러리 [1.3.0]을(를) 로드했습니다.
+04-May-2024 10:43:38.557 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR 용량정보들: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+04-May-2024 10:43:38.557 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL 설정: useAprConnector [false], useOpenSSL [true]
+04-May-2024 10:43:38.562 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL이 성공적으로 초기화되었습니다: [OpenSSL 3.0.13 30 Jan 2024]
+04-May-2024 10:43:38.803 INFO [main] org.apache.coyote.AbstractProtocol.init 프로토콜 핸들러 ["http-nio-8080"]을(를) 초기화합니다.
+04-May-2024 10:43:38.830 INFO [main] org.apache.catalina.startup.Catalina.load [463] 밀리초 내에 서버가 초기화되었습니다.
+04-May-2024 10:43:38.887 INFO [main] org.apache.catalina.core.StandardService.startInternal 서비스 [Catalina]을(를) 시작합니다.
+04-May-2024 10:43:38.887 INFO [main] org.apache.catalina.core.StandardEngine.startInternal 서버 엔진을 시작합니다: [Apache Tomcat/9.0.87]
+04-May-2024 10:43:38.898 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\Users\LeeGeonHee\Desktop\KW univ\4-1 서버프로그램설계\SERVER-SHOP\tomcat\apache-tomcat-9.0.87\webapps\docs]을(를) 배치합니다.
+04-May-2024 10:43:39.522 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars 적어도 하나의 JAR가 TLD들을 찾기 위해 스캔되었으나 아무 것도 찾지 못했습니다. 스캔했으나 TLD가 없는 JAR들의 전체 목록을 보시려면, 로그 레벨을 디버그 레벨로 설정하십시오. 스캔 과정에서 불필요한 JAR들을 건너뛰면, 시스템 시작 시간과 JSP 컴파일 시간을 단축시킬 수 있습니다.
+04-May-2024 10:43:39.661 WARNING [main] org.apache.catalina.util.SessionIdGeneratorBase.createSecureRandom [SHA1PRNG] 알고리즘을 사용하여, 세션 ID를 생성하기 위한 SecureRandom 객체를 생성하는데, [121] 밀리초가 소요됐습니다.
+04-May-2024 10:43:39.678 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\Users\LeeGeonHee\Desktop\KW univ\4-1 서버프로그램설계\SERVER-SHOP\tomcat\apache-tomcat-9.0.87\webapps\docs]에 대한 배치가 [780] 밀리초에 완료되었습니다.
+04-May-2024 10:43:39.679 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\Users\LeeGeonHee\Desktop\KW univ\4-1 서버프로그램설계\SERVER-SHOP\tomcat\apache-tomcat-9.0.87\webapps\examples]을(를) 배치합니다.
+04-May-2024 10:43:40.152 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars 적어도 하나의 JAR가 TLD들을 찾기 위해 스캔되었으나 아무 것도 찾지 못했습니다. 스캔했으나 TLD가 없는 JAR들의 전체 목록을 보시려면, 로그 레벨을 디버그 레벨로 설정하십시오. 스캔 과정에서 불필요한 JAR들을 건너뛰면, 시스템 시작 시간과 JSP 컴파일 시간을 단축시킬 수 있습니다.
+04-May-2024 10:43:40.197 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\Users\LeeGeonHee\Desktop\KW univ\4-1 서버프로그램설계\SERVER-SHOP\tomcat\apache-tomcat-9.0.87\webapps\examples]에 대한 배치가 [518] 밀리초에 완료되었습니다.
+04-May-2024 10:43:40.197 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\Users\LeeGeonHee\Desktop\KW univ\4-1 서버프로그램설계\SERVER-SHOP\tomcat\apache-tomcat-9.0.87\webapps\host-manager]을(를) 배치합니다.
+04-May-2024 10:43:40.530 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars 적어도 하나의 JAR가 TLD들을 찾기 위해 스캔되었으나 아무 것도 찾지 못했습니다. 스캔했으나 TLD가 없는 JAR들의 전체 목록을 보시려면, 로그 레벨을 디버그 레벨로 설정하십시오. 스캔 과정에서 불필요한 JAR들을 건너뛰면, 시스템 시작 시간과 JSP 컴파일 시간을 단축시킬 수 있습니다.
+04-May-2024 10:43:40.536 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\Users\LeeGeonHee\Desktop\KW univ\4-1 서버프로그램설계\SERVER-SHOP\tomcat\apache-tomcat-9.0.87\webapps\host-manager]에 대한 배치가 [338] 밀리초에 완료되었습니다.
+04-May-2024 10:43:40.536 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\Users\LeeGeonHee\Desktop\KW univ\4-1 서버프로그램설계\SERVER-SHOP\tomcat\apache-tomcat-9.0.87\webapps\manager]을(를) 배치합니다.
+04-May-2024 10:43:40.834 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars 적어도 하나의 JAR가 TLD들을 찾기 위해 스캔되었으나 아무 것도 찾지 못했습니다. 스캔했으나 TLD가 없는 JAR들의 전체 목록을 보시려면, 로그 레벨을 디버그 레벨로 설정하십시오. 스캔 과정에서 불필요한 JAR들을 건너뛰면, 시스템 시작 시간과 JSP 컴파일 시간을 단축시킬 수 있습니다.
+04-May-2024 10:43:40.836 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\Users\LeeGeonHee\Desktop\KW univ\4-1 서버프로그램설계\SERVER-SHOP\tomcat\apache-tomcat-9.0.87\webapps\manager]에 대한 배치가 [300] 밀리초에 완료되었습니다.
+04-May-2024 10:43:40.837 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\Users\LeeGeonHee\Desktop\KW univ\4-1 서버프로그램설계\SERVER-SHOP\tomcat\apache-tomcat-9.0.87\webapps\ROOT]을(를) 배치합니다.
+04-May-2024 10:43:41.090 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars 적어도 하나의 JAR가 TLD들을 찾기 위해 스캔되었으나 아무 것도 찾지 못했습니다. 스캔했으나 TLD가 없는 JAR들의 전체 목록을 보시려면, 로그 레벨을 디버그 레벨로 설정하십시오. 스캔 과정에서 불필요한 JAR들을 건너뛰면, 시스템 시작 시간과 JSP 컴파일 시간을 단축시킬 수 있습니다.
+04-May-2024 10:43:41.093 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\Users\LeeGeonHee\Desktop\KW univ\4-1 서버프로그램설계\SERVER-SHOP\tomcat\apache-tomcat-9.0.87\webapps\ROOT]에 대한 배치가 [256] 밀리초에 완료되었습니다.
+04-May-2024 10:43:41.105 INFO [main] org.apache.coyote.AbstractProtocol.start 프로토콜 핸들러 ["http-nio-8080"]을(를) 시작합니다.
+04-May-2024 10:43:41.233 INFO [main] org.apache.catalina.startup.Catalina.start 서버가 [2402] 밀리초 내에 시작되었습니다.

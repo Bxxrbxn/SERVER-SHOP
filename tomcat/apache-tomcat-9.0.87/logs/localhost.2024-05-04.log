@@ -1,0 +1,2248 @@
+04-May-2024 10:09:56.713 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+04-May-2024 10:09:56.714 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+04-May-2024 10:09:56.715 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@21a5b599')
+04-May-2024 10:13:28.941 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+04-May-2024 10:13:28.941 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+04-May-2024 10:13:28.943 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@7221539')
+04-May-2024 10:17:22.648 SEVERE [http-nio-8080-exec-1] org.apache.catalina.core.StandardWrapperValve.invoke 경로 []의 컨텍스트 내의 서블릿 [jsp]을(를) 위한 Servlet.service() 호출이, 근본 원인(root cause)과 함께, 예외 [JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/product.jsp]의 [18] 행에서 오류가 발생했습니다.
+Syntax error, insert "AssignmentOperator Expression" to complete Expression
+15:         <th>수량</th>
+16:       </tr>
+17:       <% // 데이터베이스 연결 설정 String url =
+18:       "jdbc:oracle:thin:@localhost:1521:xe"; String user = "c##scot"; String
+19:       pass = "12341234"; String query = "SELECT * FROM product"; Connection con
+20:       = null; Statement stmt = null; ResultSet rs = null; try {
+21:       Class.forName("oracle.jdbc.driver.OracleDriver"); con =
+
+
+JSP 파일 [/product.jsp]의 [18] 행에서 오류가 발생했습니다.
+The left-hand side of an assignment must be a variable
+15:         <th>수량</th>
+16:       </tr>
+17:       <% // 데이터베이스 연결 설정 String url =
+18:       "jdbc:oracle:thin:@localhost:1521:xe"; String user = "c##scot"; String
+19:       pass = "12341234"; String query = "SELECT * FROM product"; Connection con
+20:       = null; Statement stmt = null; ResultSet rs = null; try {
+21:       Class.forName("oracle.jdbc.driver.OracleDriver"); con =
+
+
+JSP 파일 [/product.jsp]의 [22] 행에서 오류가 발생했습니다.
+url cannot be resolved to a variable
+19:       pass = "12341234"; String query = "SELECT * FROM product"; Connection con
+20:       = null; Statement stmt = null; ResultSet rs = null; try {
+21:       Class.forName("oracle.jdbc.driver.OracleDriver"); con =
+22:       DriverManager.getConnection(url, user, pass); stmt =
+23:       con.createStatement(); rs = stmt.executeQuery(query); while (rs.next()) {
+24:       int id = rs.getInt("ID"); String productName =
+25:       rs.getString("PRODUCT_NAME"); String description =
+
+
+Stacktrace:]을(를) 발생시켰습니다.
+	org.apache.jasper.JasperException: JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/product.jsp]의 [18] 행에서 오류가 발생했습니다.
+Syntax error, insert "AssignmentOperator Expression" to complete Expression
+15:         <th>수량</th>
+16:       </tr>
+17:       <% // 데이터베이스 연결 설정 String url =
+18:       "jdbc:oracle:thin:@localhost:1521:xe"; String user = "c##scot"; String
+19:       pass = "12341234"; String query = "SELECT * FROM product"; Connection con
+20:       = null; Statement stmt = null; ResultSet rs = null; try {
+21:       Class.forName("oracle.jdbc.driver.OracleDriver"); con =
+
+
+JSP 파일 [/product.jsp]의 [18] 행에서 오류가 발생했습니다.
+The left-hand side of an assignment must be a variable
+15:         <th>수량</th>
+16:       </tr>
+17:       <% // 데이터베이스 연결 설정 String url =
+18:       "jdbc:oracle:thin:@localhost:1521:xe"; String user = "c##scot"; String
+19:       pass = "12341234"; String query = "SELECT * FROM product"; Connection con
+20:       = null; Statement stmt = null; ResultSet rs = null; try {
+21:       Class.forName("oracle.jdbc.driver.OracleDriver"); con =
+
+
+JSP 파일 [/product.jsp]의 [22] 행에서 오류가 발생했습니다.
+url cannot be resolved to a variable
+19:       pass = "12341234"; String query = "SELECT * FROM product"; Connection con
+20:       = null; Statement stmt = null; ResultSet rs = null; try {
+21:       Class.forName("oracle.jdbc.driver.OracleDriver"); con =
+22:       DriverManager.getConnection(url, user, pass); stmt =
+23:       con.createStatement(); rs = stmt.executeQuery(query); while (rs.next()) {
+24:       int id = rs.getInt("ID"); String productName =
+25:       rs.getString("PRODUCT_NAME"); String description =
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:214)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:542)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:398)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:368)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:352)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:399)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:379)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:327)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:210)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:154)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:179)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:154)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:670)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:928)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1786)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+04-May-2024 10:19:37.726 SEVERE [http-nio-8080-exec-3] org.apache.catalina.core.StandardWrapperValve.invoke 경로 []의 컨텍스트 내의 서블릿 [jsp]을(를) 위한 Servlet.service() 호출이, 근본 원인(root cause)과 함께, 예외 [JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/product.jsp]의 [18] 행에서 오류가 발생했습니다.
+String literal is not properly closed by a double-quote
+15:         <th>수량</th>
+16:       </tr>
+17:       <% String url = "jdbc:oracle:thin:@localhost:1521:xe"; String user =
+18:       "c##scot"; String pass = "12341234"; String query = "SELECT * FROM
+19:       product"; Connection con = null; Statement stmt = null; ResultSet rs =
+20:       null; try { Class.forName("oracle.jdbc.driver.OracleDriver"); con =
+21:       DriverManager.getConnection(url, user, pass); stmt =
+
+
+Stacktrace:]을(를) 발생시켰습니다.
+	org.apache.jasper.JasperException: JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/product.jsp]의 [18] 행에서 오류가 발생했습니다.
+String literal is not properly closed by a double-quote
+15:         <th>수량</th>
+16:       </tr>
+17:       <% String url = "jdbc:oracle:thin:@localhost:1521:xe"; String user =
+18:       "c##scot"; String pass = "12341234"; String query = "SELECT * FROM
+19:       product"; Connection con = null; Statement stmt = null; ResultSet rs =
+20:       null; try { Class.forName("oracle.jdbc.driver.OracleDriver"); con =
+21:       DriverManager.getConnection(url, user, pass); stmt =
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:214)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:542)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:398)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:368)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:352)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:399)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:379)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:327)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:210)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:154)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:179)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:154)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:670)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:928)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1786)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+04-May-2024 10:19:38.855 SEVERE [http-nio-8080-exec-4] org.apache.catalina.core.StandardWrapperValve.invoke 경로 []의 컨텍스트 내의 서블릿 [jsp]을(를) 위한 Servlet.service() 호출이, 근본 원인(root cause)과 함께, 예외 [org.apache.jasper.JasperException: java.lang.ClassNotFoundException: org.apache.jsp.product_jsp]을(를) 발생시켰습니다.
+	java.lang.ClassNotFoundException: org.apache.jsp.product_jsp
+		at java.base/java.net.URLClassLoader.findClass(URLClassLoader.java:476)
+		at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:129)
+		at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:58)
+		at org.apache.catalina.core.DefaultInstanceManager.newInstance(DefaultInstanceManager.java:150)
+		at org.apache.jasper.servlet.JspServletWrapper.getServlet(JspServletWrapper.java:192)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:413)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:379)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:327)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:210)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:154)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:179)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:154)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:670)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:928)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1786)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+04-May-2024 10:19:39.615 SEVERE [http-nio-8080-exec-5] org.apache.catalina.core.StandardWrapperValve.invoke 경로 []의 컨텍스트 내의 서블릿 [jsp]을(를) 위한 Servlet.service() 호출이, 근본 원인(root cause)과 함께, 예외 [org.apache.jasper.JasperException: java.lang.ClassNotFoundException: org.apache.jsp.product_jsp]을(를) 발생시켰습니다.
+	java.lang.ClassNotFoundException: org.apache.jsp.product_jsp
+		at java.base/java.net.URLClassLoader.findClass(URLClassLoader.java:476)
+		at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:129)
+		at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:58)
+		at org.apache.catalina.core.DefaultInstanceManager.newInstance(DefaultInstanceManager.java:150)
+		at org.apache.jasper.servlet.JspServletWrapper.getServlet(JspServletWrapper.java:192)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:413)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:379)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:327)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:210)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:154)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:179)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:154)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:670)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:928)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1786)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+04-May-2024 10:23:25.672 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+04-May-2024 10:23:25.672 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+04-May-2024 10:23:25.675 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@15be68b')
+04-May-2024 10:23:27.975 SEVERE [http-nio-8080-exec-1] org.apache.catalina.core.StandardWrapperValve.invoke 경로 []의 컨텍스트 내의 서블릿 [jsp]을(를) 위한 Servlet.service() 호출이, 근본 원인(root cause)과 함께, 예외 [JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/product.jsp]의 [18] 행에서 오류가 발생했습니다.
+String literal is not properly closed by a double-quote
+15:         <th>수량</th>
+16:       </tr>
+17:       <% String url = "jdbc:oracle:thin:@localhost:1521:xe"; String user =
+18:       "c##scot"; String pass = "12341234"; String query = "SELECT * FROM
+19:       product"; Connection con = null; Statement stmt = null; ResultSet rs =
+20:       null; try { Class.forName("oracle.jdbc.driver.OracleDriver"); con =
+21:       DriverManager.getConnection(url, user, pass); stmt =
+
+
+Stacktrace:]을(를) 발생시켰습니다.
+	org.apache.jasper.JasperException: JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/product.jsp]의 [18] 행에서 오류가 발생했습니다.
+String literal is not properly closed by a double-quote
+15:         <th>수량</th>
+16:       </tr>
+17:       <% String url = "jdbc:oracle:thin:@localhost:1521:xe"; String user =
+18:       "c##scot"; String pass = "12341234"; String query = "SELECT * FROM
+19:       product"; Connection con = null; Statement stmt = null; ResultSet rs =
+20:       null; try { Class.forName("oracle.jdbc.driver.OracleDriver"); con =
+21:       DriverManager.getConnection(url, user, pass); stmt =
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:214)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:542)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:398)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:368)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:352)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:399)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:379)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:327)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:210)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:154)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:179)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:154)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:670)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:928)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1786)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+04-May-2024 10:23:32.227 SEVERE [http-nio-8080-exec-6] org.apache.catalina.core.StandardWrapperValve.invoke 경로 []의 컨텍스트 내의 서블릿 [jsp]을(를) 위한 Servlet.service() 호출이, 근본 원인(root cause)과 함께, 예외 [JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/product.jsp]의 [18] 행에서 오류가 발생했습니다.
+String literal is not properly closed by a double-quote
+15:         <th>수량</th>
+16:       </tr>
+17:       <% String url = "jdbc:oracle:thin:@localhost:1521:xe"; String user =
+18:       "c##scot"; String pass = "12341234"; String query = "SELECT * FROM
+19:       product"; Connection con = null; Statement stmt = null; ResultSet rs =
+20:       null; try { Class.forName("oracle.jdbc.driver.OracleDriver"); con =
+21:       DriverManager.getConnection(url, user, pass); stmt =
+
+
+Stacktrace:]을(를) 발생시켰습니다.
+	org.apache.jasper.JasperException: JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/product.jsp]의 [18] 행에서 오류가 발생했습니다.
+String literal is not properly closed by a double-quote
+15:         <th>수량</th>
+16:       </tr>
+17:       <% String url = "jdbc:oracle:thin:@localhost:1521:xe"; String user =
+18:       "c##scot"; String pass = "12341234"; String query = "SELECT * FROM
+19:       product"; Connection con = null; Statement stmt = null; ResultSet rs =
+20:       null; try { Class.forName("oracle.jdbc.driver.OracleDriver"); con =
+21:       DriverManager.getConnection(url, user, pass); stmt =
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:214)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:542)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:398)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:368)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:352)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:399)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:379)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:327)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:210)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:154)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:179)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:154)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:670)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:928)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1786)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+04-May-2024 10:23:41.397 SEVERE [http-nio-8080-exec-7] org.apache.catalina.core.StandardWrapperValve.invoke 경로 []의 컨텍스트 내의 서블릿 [jsp]을(를) 위한 Servlet.service() 호출이, 근본 원인(root cause)과 함께, 예외 [JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/product.jsp]의 [18] 행에서 오류가 발생했습니다.
+String literal is not properly closed by a double-quote
+15:         <th>수량</th>
+16:       </tr>
+17:       <% String url = "jdbc:oracle:thin:@localhost:1521:xe"; String user =
+18:       "c##scot"; String pass = "12341234"; String query = "SELECT * FROM
+19:       product"; Connection con = null; Statement stmt = null; ResultSet rs =
+20:       null; try { Class.forName("oracle.jdbc.driver.OracleDriver"); con =
+21:       DriverManager.getConnection(url, user, pass); stmt =
+
+
+Stacktrace:]을(를) 발생시켰습니다.
+	org.apache.jasper.JasperException: JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/product.jsp]의 [18] 행에서 오류가 발생했습니다.
+String literal is not properly closed by a double-quote
+15:         <th>수량</th>
+16:       </tr>
+17:       <% String url = "jdbc:oracle:thin:@localhost:1521:xe"; String user =
+18:       "c##scot"; String pass = "12341234"; String query = "SELECT * FROM
+19:       product"; Connection con = null; Statement stmt = null; ResultSet rs =
+20:       null; try { Class.forName("oracle.jdbc.driver.OracleDriver"); con =
+21:       DriverManager.getConnection(url, user, pass); stmt =
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:214)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:542)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:398)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:368)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:352)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:399)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:379)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:327)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:210)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:154)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:179)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:154)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:670)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:928)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1786)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+04-May-2024 10:23:53.229 SEVERE [http-nio-8080-exec-3] org.apache.catalina.core.StandardWrapperValve.invoke 경로 []의 컨텍스트 내의 서블릿 [jsp]을(를) 위한 Servlet.service() 호출이, 근본 원인(root cause)과 함께, 예외 [JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/conn.jsp]의 [15] 행에서 오류가 발생했습니다.
+Syntax error on token "=", delete this token
+12:     request.getParameter("password"); Connection conn = null; PreparedStatement
+13:     pstmt = null; try { // JDBC 드라이버 로드
+14:     Class.forName("oracle.jdbc.driver.OracleDriver"); // 데이터베이스 연결 conn
+15:     = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe",
+16:     "c##scot", "12341234"); // SQL 쿼리 준비 // 데이터베이스의 user_tbl 테이블
+17:     구조에 따라 필드명과 데이터 타입을 확인하고 적절히 수정하세요. String sql =
+18:     "INSERT INTO user_tbl (user_id, address, email, gender, password) VALUES (?,
+
+
+JSP 파일 [/conn.jsp]의 [17] 행에서 오류가 발생했습니다.
+구조에 cannot be resolved to a type
+14:     Class.forName("oracle.jdbc.driver.OracleDriver"); // 데이터베이스 연결 conn
+15:     = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe",
+16:     "c##scot", "12341234"); // SQL 쿼리 준비 // 데이터베이스의 user_tbl 테이블
+17:     구조에 따라 필드명과 데이터 타입을 확인하고 적절히 수정하세요. String sql =
+18:     "INSERT INTO user_tbl (user_id, address, email, gender, password) VALUES (?,
+19:     ?, ?, ?, ?)"; pstmt = conn.prepareStatement(sql); pstmt.setString(1,
+20:     userId); pstmt.setString(2, address); pstmt.setString(3, email);
+
+
+JSP 파일 [/conn.jsp]의 [17] 행에서 오류가 발생했습니다.
+Syntax error on token "필드명과", ; expected
+14:     Class.forName("oracle.jdbc.driver.OracleDriver"); // 데이터베이스 연결 conn
+15:     = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe",
+16:     "c##scot", "12341234"); // SQL 쿼리 준비 // 데이터베이스의 user_tbl 테이블
+17:     구조에 따라 필드명과 데이터 타입을 확인하고 적절히 수정하세요. String sql =
+18:     "INSERT INTO user_tbl (user_id, address, email, gender, password) VALUES (?,
+19:     ?, ?, ?, ?)"; pstmt = conn.prepareStatement(sql); pstmt.setString(1,
+20:     userId); pstmt.setString(2, address); pstmt.setString(3, email);
+
+
+JSP 파일 [/conn.jsp]의 [17] 행에서 오류가 발생했습니다.
+데이터 cannot be resolved to a type
+14:     Class.forName("oracle.jdbc.driver.OracleDriver"); // 데이터베이스 연결 conn
+15:     = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe",
+16:     "c##scot", "12341234"); // SQL 쿼리 준비 // 데이터베이스의 user_tbl 테이블
+17:     구조에 따라 필드명과 데이터 타입을 확인하고 적절히 수정하세요. String sql =
+18:     "INSERT INTO user_tbl (user_id, address, email, gender, password) VALUES (?,
+19:     ?, ?, ?, ?)"; pstmt = conn.prepareStatement(sql); pstmt.setString(1,
+20:     userId); pstmt.setString(2, address); pstmt.setString(3, email);
+
+
+JSP 파일 [/conn.jsp]의 [17] 행에서 오류가 발생했습니다.
+Syntax error on token "확인하고", ; expected
+14:     Class.forName("oracle.jdbc.driver.OracleDriver"); // 데이터베이스 연결 conn
+15:     = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe",
+16:     "c##scot", "12341234"); // SQL 쿼리 준비 // 데이터베이스의 user_tbl 테이블
+17:     구조에 따라 필드명과 데이터 타입을 확인하고 적절히 수정하세요. String sql =
+18:     "INSERT INTO user_tbl (user_id, address, email, gender, password) VALUES (?,
+19:     ?, ?, ?, ?)"; pstmt = conn.prepareStatement(sql); pstmt.setString(1,
+20:     userId); pstmt.setString(2, address); pstmt.setString(3, email);
+
+
+JSP 파일 [/conn.jsp]의 [17] 행에서 오류가 발생했습니다.
+적절히 cannot be resolved to a type
+14:     Class.forName("oracle.jdbc.driver.OracleDriver"); // 데이터베이스 연결 conn
+15:     = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe",
+16:     "c##scot", "12341234"); // SQL 쿼리 준비 // 데이터베이스의 user_tbl 테이블
+17:     구조에 따라 필드명과 데이터 타입을 확인하고 적절히 수정하세요. String sql =
+18:     "INSERT INTO user_tbl (user_id, address, email, gender, password) VALUES (?,
+19:     ?, ?, ?, ?)"; pstmt = conn.prepareStatement(sql); pstmt.setString(1,
+20:     userId); pstmt.setString(2, address); pstmt.setString(3, email);
+
+
+JSP 파일 [/conn.jsp]의 [17] 행에서 오류가 발생했습니다.
+Syntax error on token ".", ; expected
+14:     Class.forName("oracle.jdbc.driver.OracleDriver"); // 데이터베이스 연결 conn
+15:     = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe",
+16:     "c##scot", "12341234"); // SQL 쿼리 준비 // 데이터베이스의 user_tbl 테이블
+17:     구조에 따라 필드명과 데이터 타입을 확인하고 적절히 수정하세요. String sql =
+18:     "INSERT INTO user_tbl (user_id, address, email, gender, password) VALUES (?,
+19:     ?, ?, ?, ?)"; pstmt = conn.prepareStatement(sql); pstmt.setString(1,
+20:     userId); pstmt.setString(2, address); pstmt.setString(3, email);
+
+
+JSP 파일 [/conn.jsp]의 [18] 행에서 오류가 발생했습니다.
+String literal is not properly closed by a double-quote
+15:     = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe",
+16:     "c##scot", "12341234"); // SQL 쿼리 준비 // 데이터베이스의 user_tbl 테이블
+17:     구조에 따라 필드명과 데이터 타입을 확인하고 적절히 수정하세요. String sql =
+18:     "INSERT INTO user_tbl (user_id, address, email, gender, password) VALUES (?,
+19:     ?, ?, ?, ?)"; pstmt = conn.prepareStatement(sql); pstmt.setString(1,
+20:     userId); pstmt.setString(2, address); pstmt.setString(3, email);
+21:     pstmt.setString(4, gender); pstmt.setString(5, password); // SQL 쿼리 실행
+
+
+JSP 파일 [/conn.jsp]의 [18] 행에서 오류가 발생했습니다.
+String literal is not properly closed by a double-quote
+15:     = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe",
+16:     "c##scot", "12341234"); // SQL 쿼리 준비 // 데이터베이스의 user_tbl 테이블
+17:     구조에 따라 필드명과 데이터 타입을 확인하고 적절히 수정하세요. String sql =
+18:     "INSERT INTO user_tbl (user_id, address, email, gender, password) VALUES (?,
+19:     ?, ?, ?, ?)"; pstmt = conn.prepareStatement(sql); pstmt.setString(1,
+20:     userId); pstmt.setString(2, address); pstmt.setString(3, email);
+21:     pstmt.setString(4, gender); pstmt.setString(5, password); // SQL 쿼리 실행
+
+
+JSP 파일 [/conn.jsp]의 [18] 행에서 오류가 발생했습니다.
+Syntax error on tokens, delete these tokens
+15:     = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe",
+16:     "c##scot", "12341234"); // SQL 쿼리 준비 // 데이터베이스의 user_tbl 테이블
+17:     구조에 따라 필드명과 데이터 타입을 확인하고 적절히 수정하세요. String sql =
+18:     "INSERT INTO user_tbl (user_id, address, email, gender, password) VALUES (?,
+19:     ?, ?, ?, ?)"; pstmt = conn.prepareStatement(sql); pstmt.setString(1,
+20:     userId); pstmt.setString(2, address); pstmt.setString(3, email);
+21:     pstmt.setString(4, gender); pstmt.setString(5, password); // SQL 쿼리 실행
+
+
+JSP 파일 [/conn.jsp]의 [20] 행에서 오류가 발생했습니다.
+Syntax error on token "<", delete this token
+17:     구조에 따라 필드명과 데이터 타입을 확인하고 적절히 수정하세요. String sql =
+18:     "INSERT INTO user_tbl (user_id, address, email, gender, password) VALUES (?,
+19:     ?, ?, ?, ?)"; pstmt = conn.prepareStatement(sql); pstmt.setString(1,
+20:     userId); pstmt.setString(2, address); pstmt.setString(3, email);
+21:     pstmt.setString(4, gender); pstmt.setString(5, password); // SQL 쿼리 실행
+22:     pstmt.executeUpdate(); out.println("
+23:     <h2>회원 가입 성공!</h2>
+
+
+JSP 파일 [/conn.jsp]의 [20] 행에서 오류가 발생했습니다.
+Syntax error, insert ")" to complete MethodInvocation
+17:     구조에 따라 필드명과 데이터 타입을 확인하고 적절히 수정하세요. String sql =
+18:     "INSERT INTO user_tbl (user_id, address, email, gender, password) VALUES (?,
+19:     ?, ?, ?, ?)"; pstmt = conn.prepareStatement(sql); pstmt.setString(1,
+20:     userId); pstmt.setString(2, address); pstmt.setString(3, email);
+21:     pstmt.setString(4, gender); pstmt.setString(5, password); // SQL 쿼리 실행
+22:     pstmt.executeUpdate(); out.println("
+23:     <h2>회원 가입 성공!</h2>
+
+
+JSP 파일 [/conn.jsp]의 [20] 행에서 오류가 발생했습니다.
+Syntax error, insert ";" to complete Statement
+17:     구조에 따라 필드명과 데이터 타입을 확인하고 적절히 수정하세요. String sql =
+18:     "INSERT INTO user_tbl (user_id, address, email, gender, password) VALUES (?,
+19:     ?, ?, ?, ?)"; pstmt = conn.prepareStatement(sql); pstmt.setString(1,
+20:     userId); pstmt.setString(2, address); pstmt.setString(3, email);
+21:     pstmt.setString(4, gender); pstmt.setString(5, password); // SQL 쿼리 실행
+22:     pstmt.executeUpdate(); out.println("
+23:     <h2>회원 가입 성공!</h2>
+
+
+JSP 파일 [/conn.jsp]의 [20] 행에서 오류가 발생했습니다.
+Syntax error on tokens, ( expected instead
+17:     구조에 따라 필드명과 데이터 타입을 확인하고 적절히 수정하세요. String sql =
+18:     "INSERT INTO user_tbl (user_id, address, email, gender, password) VALUES (?,
+19:     ?, ?, ?, ?)"; pstmt = conn.prepareStatement(sql); pstmt.setString(1,
+20:     userId); pstmt.setString(2, address); pstmt.setString(3, email);
+21:     pstmt.setString(4, gender); pstmt.setString(5, password); // SQL 쿼리 실행
+22:     pstmt.executeUpdate(); out.println("
+23:     <h2>회원 가입 성공!</h2>
+
+
+JSP 파일 [/conn.jsp]의 [20] 행에서 오류가 발생했습니다.
+Syntax error on token ">", -> expected
+17:     구조에 따라 필드명과 데이터 타입을 확인하고 적절히 수정하세요. String sql =
+18:     "INSERT INTO user_tbl (user_id, address, email, gender, password) VALUES (?,
+19:     ?, ?, ?, ?)"; pstmt = conn.prepareStatement(sql); pstmt.setString(1,
+20:     userId); pstmt.setString(2, address); pstmt.setString(3, email);
+21:     pstmt.setString(4, gender); pstmt.setString(5, password); // SQL 쿼리 실행
+22:     pstmt.executeUpdate(); out.println("
+23:     <h2>회원 가입 성공!</h2>
+
+
+JSP 파일 [/conn.jsp]의 [22] 행에서 오류가 발생했습니다.
+Syntax error on token "가입", -> expected
+19:     ?, ?, ?, ?)"; pstmt = conn.prepareStatement(sql); pstmt.setString(1,
+20:     userId); pstmt.setString(2, address); pstmt.setString(3, email);
+21:     pstmt.setString(4, gender); pstmt.setString(5, password); // SQL 쿼리 실행
+22:     pstmt.executeUpdate(); out.println("
+23:     <h2>회원 가입 성공!</h2>
+24:     "); } catch(Exception e) { e.printStackTrace(); out.println("
+25:     <h2>회원 가입 실패</h2>
+
+
+JSP 파일 [/conn.jsp]의 [22] 행에서 오류가 발생했습니다.
+Syntax error on token "/", invalid (
+19:     ?, ?, ?, ?)"; pstmt = conn.prepareStatement(sql); pstmt.setString(1,
+20:     userId); pstmt.setString(2, address); pstmt.setString(3, email);
+21:     pstmt.setString(4, gender); pstmt.setString(5, password); // SQL 쿼리 실행
+22:     pstmt.executeUpdate(); out.println("
+23:     <h2>회원 가입 성공!</h2>
+24:     "); } catch(Exception e) { e.printStackTrace(); out.println("
+25:     <h2>회원 가입 실패</h2>
+
+
+JSP 파일 [/conn.jsp]의 [23] 행에서 오류가 발생했습니다.
+Syntax error, insert ")" to complete Expression
+20:     userId); pstmt.setString(2, address); pstmt.setString(3, email);
+21:     pstmt.setString(4, gender); pstmt.setString(5, password); // SQL 쿼리 실행
+22:     pstmt.executeUpdate(); out.println("
+23:     <h2>회원 가입 성공!</h2>
+24:     "); } catch(Exception e) { e.printStackTrace(); out.println("
+25:     <h2>회원 가입 실패</h2>
+26:     "); } finally { if (pstmt != null) try { pstmt.close(); } catch(SQLException
+
+
+JSP 파일 [/conn.jsp]의 [23] 행에서 오류가 발생했습니다.
+Syntax error, insert "AssignmentOperator Expression" to complete Assignment
+20:     userId); pstmt.setString(2, address); pstmt.setString(3, email);
+21:     pstmt.setString(4, gender); pstmt.setString(5, password); // SQL 쿼리 실행
+22:     pstmt.executeUpdate(); out.println("
+23:     <h2>회원 가입 성공!</h2>
+24:     "); } catch(Exception e) { e.printStackTrace(); out.println("
+25:     <h2>회원 가입 실패</h2>
+26:     "); } finally { if (pstmt != null) try { pstmt.close(); } catch(SQLException
+
+
+JSP 파일 [/conn.jsp]의 [23] 행에서 오류가 발생했습니다.
+Syntax error, insert ";" to complete Statement
+20:     userId); pstmt.setString(2, address); pstmt.setString(3, email);
+21:     pstmt.setString(4, gender); pstmt.setString(5, password); // SQL 쿼리 실행
+22:     pstmt.executeUpdate(); out.println("
+23:     <h2>회원 가입 성공!</h2>
+24:     "); } catch(Exception e) { e.printStackTrace(); out.println("
+25:     <h2>회원 가입 실패</h2>
+26:     "); } finally { if (pstmt != null) try { pstmt.close(); } catch(SQLException
+
+
+JSP 파일 [/conn.jsp]의 [23] 행에서 오류가 발생했습니다.
+Syntax error, insert "Finally" to complete TryStatement
+20:     userId); pstmt.setString(2, address); pstmt.setString(3, email);
+21:     pstmt.setString(4, gender); pstmt.setString(5, password); // SQL 쿼리 실행
+22:     pstmt.executeUpdate(); out.println("
+23:     <h2>회원 가입 성공!</h2>
+24:     "); } catch(Exception e) { e.printStackTrace(); out.println("
+25:     <h2>회원 가입 실패</h2>
+26:     "); } finally { if (pstmt != null) try { pstmt.close(); } catch(SQLException
+
+
+Stacktrace:]을(를) 발생시켰습니다.
+	org.apache.jasper.JasperException: JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/conn.jsp]의 [15] 행에서 오류가 발생했습니다.
+Syntax error on token "=", delete this token
+12:     request.getParameter("password"); Connection conn = null; PreparedStatement
+13:     pstmt = null; try { // JDBC 드라이버 로드
+14:     Class.forName("oracle.jdbc.driver.OracleDriver"); // 데이터베이스 연결 conn
+15:     = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe",
+16:     "c##scot", "12341234"); // SQL 쿼리 준비 // 데이터베이스의 user_tbl 테이블
+17:     구조에 따라 필드명과 데이터 타입을 확인하고 적절히 수정하세요. String sql =
+18:     "INSERT INTO user_tbl (user_id, address, email, gender, password) VALUES (?,
+
+
+JSP 파일 [/conn.jsp]의 [17] 행에서 오류가 발생했습니다.
+구조에 cannot be resolved to a type
+14:     Class.forName("oracle.jdbc.driver.OracleDriver"); // 데이터베이스 연결 conn
+15:     = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe",
+16:     "c##scot", "12341234"); // SQL 쿼리 준비 // 데이터베이스의 user_tbl 테이블
+17:     구조에 따라 필드명과 데이터 타입을 확인하고 적절히 수정하세요. String sql =
+18:     "INSERT INTO user_tbl (user_id, address, email, gender, password) VALUES (?,
+19:     ?, ?, ?, ?)"; pstmt = conn.prepareStatement(sql); pstmt.setString(1,
+20:     userId); pstmt.setString(2, address); pstmt.setString(3, email);
+
+
+JSP 파일 [/conn.jsp]의 [17] 행에서 오류가 발생했습니다.
+Syntax error on token "필드명과", ; expected
+14:     Class.forName("oracle.jdbc.driver.OracleDriver"); // 데이터베이스 연결 conn
+15:     = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe",
+16:     "c##scot", "12341234"); // SQL 쿼리 준비 // 데이터베이스의 user_tbl 테이블
+17:     구조에 따라 필드명과 데이터 타입을 확인하고 적절히 수정하세요. String sql =
+18:     "INSERT INTO user_tbl (user_id, address, email, gender, password) VALUES (?,
+19:     ?, ?, ?, ?)"; pstmt = conn.prepareStatement(sql); pstmt.setString(1,
+20:     userId); pstmt.setString(2, address); pstmt.setString(3, email);
+
+
+JSP 파일 [/conn.jsp]의 [17] 행에서 오류가 발생했습니다.
+데이터 cannot be resolved to a type
+14:     Class.forName("oracle.jdbc.driver.OracleDriver"); // 데이터베이스 연결 conn
+15:     = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe",
+16:     "c##scot", "12341234"); // SQL 쿼리 준비 // 데이터베이스의 user_tbl 테이블
+17:     구조에 따라 필드명과 데이터 타입을 확인하고 적절히 수정하세요. String sql =
+18:     "INSERT INTO user_tbl (user_id, address, email, gender, password) VALUES (?,
+19:     ?, ?, ?, ?)"; pstmt = conn.prepareStatement(sql); pstmt.setString(1,
+20:     userId); pstmt.setString(2, address); pstmt.setString(3, email);
+
+
+JSP 파일 [/conn.jsp]의 [17] 행에서 오류가 발생했습니다.
+Syntax error on token "확인하고", ; expected
+14:     Class.forName("oracle.jdbc.driver.OracleDriver"); // 데이터베이스 연결 conn
+15:     = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe",
+16:     "c##scot", "12341234"); // SQL 쿼리 준비 // 데이터베이스의 user_tbl 테이블
+17:     구조에 따라 필드명과 데이터 타입을 확인하고 적절히 수정하세요. String sql =
+18:     "INSERT INTO user_tbl (user_id, address, email, gender, password) VALUES (?,
+19:     ?, ?, ?, ?)"; pstmt = conn.prepareStatement(sql); pstmt.setString(1,
+20:     userId); pstmt.setString(2, address); pstmt.setString(3, email);
+
+
+JSP 파일 [/conn.jsp]의 [17] 행에서 오류가 발생했습니다.
+적절히 cannot be resolved to a type
+14:     Class.forName("oracle.jdbc.driver.OracleDriver"); // 데이터베이스 연결 conn
+15:     = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe",
+16:     "c##scot", "12341234"); // SQL 쿼리 준비 // 데이터베이스의 user_tbl 테이블
+17:     구조에 따라 필드명과 데이터 타입을 확인하고 적절히 수정하세요. String sql =
+18:     "INSERT INTO user_tbl (user_id, address, email, gender, password) VALUES (?,
+19:     ?, ?, ?, ?)"; pstmt = conn.prepareStatement(sql); pstmt.setString(1,
+20:     userId); pstmt.setString(2, address); pstmt.setString(3, email);
+
+
+JSP 파일 [/conn.jsp]의 [17] 행에서 오류가 발생했습니다.
+Syntax error on token ".", ; expected
+14:     Class.forName("oracle.jdbc.driver.OracleDriver"); // 데이터베이스 연결 conn
+15:     = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe",
+16:     "c##scot", "12341234"); // SQL 쿼리 준비 // 데이터베이스의 user_tbl 테이블
+17:     구조에 따라 필드명과 데이터 타입을 확인하고 적절히 수정하세요. String sql =
+18:     "INSERT INTO user_tbl (user_id, address, email, gender, password) VALUES (?,
+19:     ?, ?, ?, ?)"; pstmt = conn.prepareStatement(sql); pstmt.setString(1,
+20:     userId); pstmt.setString(2, address); pstmt.setString(3, email);
+
+
+JSP 파일 [/conn.jsp]의 [18] 행에서 오류가 발생했습니다.
+String literal is not properly closed by a double-quote
+15:     = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe",
+16:     "c##scot", "12341234"); // SQL 쿼리 준비 // 데이터베이스의 user_tbl 테이블
+17:     구조에 따라 필드명과 데이터 타입을 확인하고 적절히 수정하세요. String sql =
+18:     "INSERT INTO user_tbl (user_id, address, email, gender, password) VALUES (?,
+19:     ?, ?, ?, ?)"; pstmt = conn.prepareStatement(sql); pstmt.setString(1,
+20:     userId); pstmt.setString(2, address); pstmt.setString(3, email);
+21:     pstmt.setString(4, gender); pstmt.setString(5, password); // SQL 쿼리 실행
+
+
+JSP 파일 [/conn.jsp]의 [18] 행에서 오류가 발생했습니다.
+String literal is not properly closed by a double-quote
+15:     = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe",
+16:     "c##scot", "12341234"); // SQL 쿼리 준비 // 데이터베이스의 user_tbl 테이블
+17:     구조에 따라 필드명과 데이터 타입을 확인하고 적절히 수정하세요. String sql =
+18:     "INSERT INTO user_tbl (user_id, address, email, gender, password) VALUES (?,
+19:     ?, ?, ?, ?)"; pstmt = conn.prepareStatement(sql); pstmt.setString(1,
+20:     userId); pstmt.setString(2, address); pstmt.setString(3, email);
+21:     pstmt.setString(4, gender); pstmt.setString(5, password); // SQL 쿼리 실행
+
+
+JSP 파일 [/conn.jsp]의 [18] 행에서 오류가 발생했습니다.
+Syntax error on tokens, delete these tokens
+15:     = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe",
+16:     "c##scot", "12341234"); // SQL 쿼리 준비 // 데이터베이스의 user_tbl 테이블
+17:     구조에 따라 필드명과 데이터 타입을 확인하고 적절히 수정하세요. String sql =
+18:     "INSERT INTO user_tbl (user_id, address, email, gender, password) VALUES (?,
+19:     ?, ?, ?, ?)"; pstmt = conn.prepareStatement(sql); pstmt.setString(1,
+20:     userId); pstmt.setString(2, address); pstmt.setString(3, email);
+21:     pstmt.setString(4, gender); pstmt.setString(5, password); // SQL 쿼리 실행
+
+
+JSP 파일 [/conn.jsp]의 [20] 행에서 오류가 발생했습니다.
+Syntax error on token "<", delete this token
+17:     구조에 따라 필드명과 데이터 타입을 확인하고 적절히 수정하세요. String sql =
+18:     "INSERT INTO user_tbl (user_id, address, email, gender, password) VALUES (?,
+19:     ?, ?, ?, ?)"; pstmt = conn.prepareStatement(sql); pstmt.setString(1,
+20:     userId); pstmt.setString(2, address); pstmt.setString(3, email);
+21:     pstmt.setString(4, gender); pstmt.setString(5, password); // SQL 쿼리 실행
+22:     pstmt.executeUpdate(); out.println("
+23:     <h2>회원 가입 성공!</h2>
+
+
+JSP 파일 [/conn.jsp]의 [20] 행에서 오류가 발생했습니다.
+Syntax error, insert ")" to complete MethodInvocation
+17:     구조에 따라 필드명과 데이터 타입을 확인하고 적절히 수정하세요. String sql =
+18:     "INSERT INTO user_tbl (user_id, address, email, gender, password) VALUES (?,
+19:     ?, ?, ?, ?)"; pstmt = conn.prepareStatement(sql); pstmt.setString(1,
+20:     userId); pstmt.setString(2, address); pstmt.setString(3, email);
+21:     pstmt.setString(4, gender); pstmt.setString(5, password); // SQL 쿼리 실행
+22:     pstmt.executeUpdate(); out.println("
+23:     <h2>회원 가입 성공!</h2>
+
+
+JSP 파일 [/conn.jsp]의 [20] 행에서 오류가 발생했습니다.
+Syntax error, insert ";" to complete Statement
+17:     구조에 따라 필드명과 데이터 타입을 확인하고 적절히 수정하세요. String sql =
+18:     "INSERT INTO user_tbl (user_id, address, email, gender, password) VALUES (?,
+19:     ?, ?, ?, ?)"; pstmt = conn.prepareStatement(sql); pstmt.setString(1,
+20:     userId); pstmt.setString(2, address); pstmt.setString(3, email);
+21:     pstmt.setString(4, gender); pstmt.setString(5, password); // SQL 쿼리 실행
+22:     pstmt.executeUpdate(); out.println("
+23:     <h2>회원 가입 성공!</h2>
+
+
+JSP 파일 [/conn.jsp]의 [20] 행에서 오류가 발생했습니다.
+Syntax error on tokens, ( expected instead
+17:     구조에 따라 필드명과 데이터 타입을 확인하고 적절히 수정하세요. String sql =
+18:     "INSERT INTO user_tbl (user_id, address, email, gender, password) VALUES (?,
+19:     ?, ?, ?, ?)"; pstmt = conn.prepareStatement(sql); pstmt.setString(1,
+20:     userId); pstmt.setString(2, address); pstmt.setString(3, email);
+21:     pstmt.setString(4, gender); pstmt.setString(5, password); // SQL 쿼리 실행
+22:     pstmt.executeUpdate(); out.println("
+23:     <h2>회원 가입 성공!</h2>
+
+
+JSP 파일 [/conn.jsp]의 [20] 행에서 오류가 발생했습니다.
+Syntax error on token ">", -> expected
+17:     구조에 따라 필드명과 데이터 타입을 확인하고 적절히 수정하세요. String sql =
+18:     "INSERT INTO user_tbl (user_id, address, email, gender, password) VALUES (?,
+19:     ?, ?, ?, ?)"; pstmt = conn.prepareStatement(sql); pstmt.setString(1,
+20:     userId); pstmt.setString(2, address); pstmt.setString(3, email);
+21:     pstmt.setString(4, gender); pstmt.setString(5, password); // SQL 쿼리 실행
+22:     pstmt.executeUpdate(); out.println("
+23:     <h2>회원 가입 성공!</h2>
+
+
+JSP 파일 [/conn.jsp]의 [22] 행에서 오류가 발생했습니다.
+Syntax error on token "가입", -> expected
+19:     ?, ?, ?, ?)"; pstmt = conn.prepareStatement(sql); pstmt.setString(1,
+20:     userId); pstmt.setString(2, address); pstmt.setString(3, email);
+21:     pstmt.setString(4, gender); pstmt.setString(5, password); // SQL 쿼리 실행
+22:     pstmt.executeUpdate(); out.println("
+23:     <h2>회원 가입 성공!</h2>
+24:     "); } catch(Exception e) { e.printStackTrace(); out.println("
+25:     <h2>회원 가입 실패</h2>
+
+
+JSP 파일 [/conn.jsp]의 [22] 행에서 오류가 발생했습니다.
+Syntax error on token "/", invalid (
+19:     ?, ?, ?, ?)"; pstmt = conn.prepareStatement(sql); pstmt.setString(1,
+20:     userId); pstmt.setString(2, address); pstmt.setString(3, email);
+21:     pstmt.setString(4, gender); pstmt.setString(5, password); // SQL 쿼리 실행
+22:     pstmt.executeUpdate(); out.println("
+23:     <h2>회원 가입 성공!</h2>
+24:     "); } catch(Exception e) { e.printStackTrace(); out.println("
+25:     <h2>회원 가입 실패</h2>
+
+
+JSP 파일 [/conn.jsp]의 [23] 행에서 오류가 발생했습니다.
+Syntax error, insert ")" to complete Expression
+20:     userId); pstmt.setString(2, address); pstmt.setString(3, email);
+21:     pstmt.setString(4, gender); pstmt.setString(5, password); // SQL 쿼리 실행
+22:     pstmt.executeUpdate(); out.println("
+23:     <h2>회원 가입 성공!</h2>
+24:     "); } catch(Exception e) { e.printStackTrace(); out.println("
+25:     <h2>회원 가입 실패</h2>
+26:     "); } finally { if (pstmt != null) try { pstmt.close(); } catch(SQLException
+
+
+JSP 파일 [/conn.jsp]의 [23] 행에서 오류가 발생했습니다.
+Syntax error, insert "AssignmentOperator Expression" to complete Assignment
+20:     userId); pstmt.setString(2, address); pstmt.setString(3, email);
+21:     pstmt.setString(4, gender); pstmt.setString(5, password); // SQL 쿼리 실행
+22:     pstmt.executeUpdate(); out.println("
+23:     <h2>회원 가입 성공!</h2>
+24:     "); } catch(Exception e) { e.printStackTrace(); out.println("
+25:     <h2>회원 가입 실패</h2>
+26:     "); } finally { if (pstmt != null) try { pstmt.close(); } catch(SQLException
+
+
+JSP 파일 [/conn.jsp]의 [23] 행에서 오류가 발생했습니다.
+Syntax error, insert ";" to complete Statement
+20:     userId); pstmt.setString(2, address); pstmt.setString(3, email);
+21:     pstmt.setString(4, gender); pstmt.setString(5, password); // SQL 쿼리 실행
+22:     pstmt.executeUpdate(); out.println("
+23:     <h2>회원 가입 성공!</h2>
+24:     "); } catch(Exception e) { e.printStackTrace(); out.println("
+25:     <h2>회원 가입 실패</h2>
+26:     "); } finally { if (pstmt != null) try { pstmt.close(); } catch(SQLException
+
+
+JSP 파일 [/conn.jsp]의 [23] 행에서 오류가 발생했습니다.
+Syntax error, insert "Finally" to complete TryStatement
+20:     userId); pstmt.setString(2, address); pstmt.setString(3, email);
+21:     pstmt.setString(4, gender); pstmt.setString(5, password); // SQL 쿼리 실행
+22:     pstmt.executeUpdate(); out.println("
+23:     <h2>회원 가입 성공!</h2>
+24:     "); } catch(Exception e) { e.printStackTrace(); out.println("
+25:     <h2>회원 가입 실패</h2>
+26:     "); } finally { if (pstmt != null) try { pstmt.close(); } catch(SQLException
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:214)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:542)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:398)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:368)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:352)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:399)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:379)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:327)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:210)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:154)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:179)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:154)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:670)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:928)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1786)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+04-May-2024 10:24:33.725 SEVERE [http-nio-8080-exec-7] org.apache.catalina.core.StandardWrapperValve.invoke 경로 []의 컨텍스트 내의 서블릿 [jsp]을(를) 위한 Servlet.service() 호출이, 근본 원인(root cause)과 함께, 예외 [JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/conn.jsp]의 [15] 행에서 오류가 발생했습니다.
+Syntax error on token "=", delete this token
+12:     request.getParameter("password"); Connection conn = null; PreparedStatement
+13:     pstmt = null; try { // JDBC 드라이버 로드
+14:     Class.forName("oracle.jdbc.driver.OracleDriver"); // 데이터베이스 연결 conn
+15:     = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe",
+16:     "c##scot", "12341234"); // SQL 쿼리 준비 // 데이터베이스의 user_tbl 테이블
+17:     구조에 따라 필드명과 데이터 타입을 확인하고 적절히 수정하세요. String sql =
+18:     "INSERT INTO user_tbl (user_id, address, email, gender, password) VALUES (?,
+
+
+JSP 파일 [/conn.jsp]의 [17] 행에서 오류가 발생했습니다.
+구조에 cannot be resolved to a type
+14:     Class.forName("oracle.jdbc.driver.OracleDriver"); // 데이터베이스 연결 conn
+15:     = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe",
+16:     "c##scot", "12341234"); // SQL 쿼리 준비 // 데이터베이스의 user_tbl 테이블
+17:     구조에 따라 필드명과 데이터 타입을 확인하고 적절히 수정하세요. String sql =
+18:     "INSERT INTO user_tbl (user_id, address, email, gender, password) VALUES (?,
+19:     ?, ?, ?, ?)"; pstmt = conn.prepareStatement(sql); pstmt.setString(1,
+20:     userId); pstmt.setString(2, address); pstmt.setString(3, email);
+
+
+JSP 파일 [/conn.jsp]의 [17] 행에서 오류가 발생했습니다.
+Syntax error on token "필드명과", ; expected
+14:     Class.forName("oracle.jdbc.driver.OracleDriver"); // 데이터베이스 연결 conn
+15:     = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe",
+16:     "c##scot", "12341234"); // SQL 쿼리 준비 // 데이터베이스의 user_tbl 테이블
+17:     구조에 따라 필드명과 데이터 타입을 확인하고 적절히 수정하세요. String sql =
+18:     "INSERT INTO user_tbl (user_id, address, email, gender, password) VALUES (?,
+19:     ?, ?, ?, ?)"; pstmt = conn.prepareStatement(sql); pstmt.setString(1,
+20:     userId); pstmt.setString(2, address); pstmt.setString(3, email);
+
+
+JSP 파일 [/conn.jsp]의 [17] 행에서 오류가 발생했습니다.
+데이터 cannot be resolved to a type
+14:     Class.forName("oracle.jdbc.driver.OracleDriver"); // 데이터베이스 연결 conn
+15:     = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe",
+16:     "c##scot", "12341234"); // SQL 쿼리 준비 // 데이터베이스의 user_tbl 테이블
+17:     구조에 따라 필드명과 데이터 타입을 확인하고 적절히 수정하세요. String sql =
+18:     "INSERT INTO user_tbl (user_id, address, email, gender, password) VALUES (?,
+19:     ?, ?, ?, ?)"; pstmt = conn.prepareStatement(sql); pstmt.setString(1,
+20:     userId); pstmt.setString(2, address); pstmt.setString(3, email);
+
+
+JSP 파일 [/conn.jsp]의 [17] 행에서 오류가 발생했습니다.
+Syntax error on token "확인하고", ; expected
+14:     Class.forName("oracle.jdbc.driver.OracleDriver"); // 데이터베이스 연결 conn
+15:     = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe",
+16:     "c##scot", "12341234"); // SQL 쿼리 준비 // 데이터베이스의 user_tbl 테이블
+17:     구조에 따라 필드명과 데이터 타입을 확인하고 적절히 수정하세요. String sql =
+18:     "INSERT INTO user_tbl (user_id, address, email, gender, password) VALUES (?,
+19:     ?, ?, ?, ?)"; pstmt = conn.prepareStatement(sql); pstmt.setString(1,
+20:     userId); pstmt.setString(2, address); pstmt.setString(3, email);
+
+
+JSP 파일 [/conn.jsp]의 [17] 행에서 오류가 발생했습니다.
+적절히 cannot be resolved to a type
+14:     Class.forName("oracle.jdbc.driver.OracleDriver"); // 데이터베이스 연결 conn
+15:     = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe",
+16:     "c##scot", "12341234"); // SQL 쿼리 준비 // 데이터베이스의 user_tbl 테이블
+17:     구조에 따라 필드명과 데이터 타입을 확인하고 적절히 수정하세요. String sql =
+18:     "INSERT INTO user_tbl (user_id, address, email, gender, password) VALUES (?,
+19:     ?, ?, ?, ?)"; pstmt = conn.prepareStatement(sql); pstmt.setString(1,
+20:     userId); pstmt.setString(2, address); pstmt.setString(3, email);
+
+
+JSP 파일 [/conn.jsp]의 [17] 행에서 오류가 발생했습니다.
+Syntax error on token ".", ; expected
+14:     Class.forName("oracle.jdbc.driver.OracleDriver"); // 데이터베이스 연결 conn
+15:     = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe",
+16:     "c##scot", "12341234"); // SQL 쿼리 준비 // 데이터베이스의 user_tbl 테이블
+17:     구조에 따라 필드명과 데이터 타입을 확인하고 적절히 수정하세요. String sql =
+18:     "INSERT INTO user_tbl (user_id, address, email, gender, password) VALUES (?,
+19:     ?, ?, ?, ?)"; pstmt = conn.prepareStatement(sql); pstmt.setString(1,
+20:     userId); pstmt.setString(2, address); pstmt.setString(3, email);
+
+
+JSP 파일 [/conn.jsp]의 [18] 행에서 오류가 발생했습니다.
+String literal is not properly closed by a double-quote
+15:     = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe",
+16:     "c##scot", "12341234"); // SQL 쿼리 준비 // 데이터베이스의 user_tbl 테이블
+17:     구조에 따라 필드명과 데이터 타입을 확인하고 적절히 수정하세요. String sql =
+18:     "INSERT INTO user_tbl (user_id, address, email, gender, password) VALUES (?,
+19:     ?, ?, ?, ?)"; pstmt = conn.prepareStatement(sql); pstmt.setString(1,
+20:     userId); pstmt.setString(2, address); pstmt.setString(3, email);
+21:     pstmt.setString(4, gender); pstmt.setString(5, password); // SQL 쿼리 실행
+
+
+JSP 파일 [/conn.jsp]의 [18] 행에서 오류가 발생했습니다.
+String literal is not properly closed by a double-quote
+15:     = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe",
+16:     "c##scot", "12341234"); // SQL 쿼리 준비 // 데이터베이스의 user_tbl 테이블
+17:     구조에 따라 필드명과 데이터 타입을 확인하고 적절히 수정하세요. String sql =
+18:     "INSERT INTO user_tbl (user_id, address, email, gender, password) VALUES (?,
+19:     ?, ?, ?, ?)"; pstmt = conn.prepareStatement(sql); pstmt.setString(1,
+20:     userId); pstmt.setString(2, address); pstmt.setString(3, email);
+21:     pstmt.setString(4, gender); pstmt.setString(5, password); // SQL 쿼리 실행
+
+
+JSP 파일 [/conn.jsp]의 [18] 행에서 오류가 발생했습니다.
+Syntax error on tokens, delete these tokens
+15:     = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe",
+16:     "c##scot", "12341234"); // SQL 쿼리 준비 // 데이터베이스의 user_tbl 테이블
+17:     구조에 따라 필드명과 데이터 타입을 확인하고 적절히 수정하세요. String sql =
+18:     "INSERT INTO user_tbl (user_id, address, email, gender, password) VALUES (?,
+19:     ?, ?, ?, ?)"; pstmt = conn.prepareStatement(sql); pstmt.setString(1,
+20:     userId); pstmt.setString(2, address); pstmt.setString(3, email);
+21:     pstmt.setString(4, gender); pstmt.setString(5, password); // SQL 쿼리 실행
+
+
+JSP 파일 [/conn.jsp]의 [20] 행에서 오류가 발생했습니다.
+Syntax error on token "<", delete this token
+17:     구조에 따라 필드명과 데이터 타입을 확인하고 적절히 수정하세요. String sql =
+18:     "INSERT INTO user_tbl (user_id, address, email, gender, password) VALUES (?,
+19:     ?, ?, ?, ?)"; pstmt = conn.prepareStatement(sql); pstmt.setString(1,
+20:     userId); pstmt.setString(2, address); pstmt.setString(3, email);
+21:     pstmt.setString(4, gender); pstmt.setString(5, password); // SQL 쿼리 실행
+22:     pstmt.executeUpdate(); out.println("
+23:     <h2>회원 가입 성공!</h2>
+
+
+JSP 파일 [/conn.jsp]의 [20] 행에서 오류가 발생했습니다.
+Syntax error, insert ")" to complete MethodInvocation
+17:     구조에 따라 필드명과 데이터 타입을 확인하고 적절히 수정하세요. String sql =
+18:     "INSERT INTO user_tbl (user_id, address, email, gender, password) VALUES (?,
+19:     ?, ?, ?, ?)"; pstmt = conn.prepareStatement(sql); pstmt.setString(1,
+20:     userId); pstmt.setString(2, address); pstmt.setString(3, email);
+21:     pstmt.setString(4, gender); pstmt.setString(5, password); // SQL 쿼리 실행
+22:     pstmt.executeUpdate(); out.println("
+23:     <h2>회원 가입 성공!</h2>
+
+
+JSP 파일 [/conn.jsp]의 [20] 행에서 오류가 발생했습니다.
+Syntax error, insert ";" to complete Statement
+17:     구조에 따라 필드명과 데이터 타입을 확인하고 적절히 수정하세요. String sql =
+18:     "INSERT INTO user_tbl (user_id, address, email, gender, password) VALUES (?,
+19:     ?, ?, ?, ?)"; pstmt = conn.prepareStatement(sql); pstmt.setString(1,
+20:     userId); pstmt.setString(2, address); pstmt.setString(3, email);
+21:     pstmt.setString(4, gender); pstmt.setString(5, password); // SQL 쿼리 실행
+22:     pstmt.executeUpdate(); out.println("
+23:     <h2>회원 가입 성공!</h2>
+
+
+JSP 파일 [/conn.jsp]의 [20] 행에서 오류가 발생했습니다.
+Syntax error on tokens, ( expected instead
+17:     구조에 따라 필드명과 데이터 타입을 확인하고 적절히 수정하세요. String sql =
+18:     "INSERT INTO user_tbl (user_id, address, email, gender, password) VALUES (?,
+19:     ?, ?, ?, ?)"; pstmt = conn.prepareStatement(sql); pstmt.setString(1,
+20:     userId); pstmt.setString(2, address); pstmt.setString(3, email);
+21:     pstmt.setString(4, gender); pstmt.setString(5, password); // SQL 쿼리 실행
+22:     pstmt.executeUpdate(); out.println("
+23:     <h2>회원 가입 성공!</h2>
+
+
+JSP 파일 [/conn.jsp]의 [20] 행에서 오류가 발생했습니다.
+Syntax error on token ">", -> expected
+17:     구조에 따라 필드명과 데이터 타입을 확인하고 적절히 수정하세요. String sql =
+18:     "INSERT INTO user_tbl (user_id, address, email, gender, password) VALUES (?,
+19:     ?, ?, ?, ?)"; pstmt = conn.prepareStatement(sql); pstmt.setString(1,
+20:     userId); pstmt.setString(2, address); pstmt.setString(3, email);
+21:     pstmt.setString(4, gender); pstmt.setString(5, password); // SQL 쿼리 실행
+22:     pstmt.executeUpdate(); out.println("
+23:     <h2>회원 가입 성공!</h2>
+
+
+JSP 파일 [/conn.jsp]의 [22] 행에서 오류가 발생했습니다.
+Syntax error on token "가입", -> expected
+19:     ?, ?, ?, ?)"; pstmt = conn.prepareStatement(sql); pstmt.setString(1,
+20:     userId); pstmt.setString(2, address); pstmt.setString(3, email);
+21:     pstmt.setString(4, gender); pstmt.setString(5, password); // SQL 쿼리 실행
+22:     pstmt.executeUpdate(); out.println("
+23:     <h2>회원 가입 성공!</h2>
+24:     "); } catch(Exception e) { e.printStackTrace(); out.println("
+25:     <h2>회원 가입 실패</h2>
+
+
+JSP 파일 [/conn.jsp]의 [22] 행에서 오류가 발생했습니다.
+Syntax error on token "/", invalid (
+19:     ?, ?, ?, ?)"; pstmt = conn.prepareStatement(sql); pstmt.setString(1,
+20:     userId); pstmt.setString(2, address); pstmt.setString(3, email);
+21:     pstmt.setString(4, gender); pstmt.setString(5, password); // SQL 쿼리 실행
+22:     pstmt.executeUpdate(); out.println("
+23:     <h2>회원 가입 성공!</h2>
+24:     "); } catch(Exception e) { e.printStackTrace(); out.println("
+25:     <h2>회원 가입 실패</h2>
+
+
+JSP 파일 [/conn.jsp]의 [23] 행에서 오류가 발생했습니다.
+Syntax error, insert ")" to complete Expression
+20:     userId); pstmt.setString(2, address); pstmt.setString(3, email);
+21:     pstmt.setString(4, gender); pstmt.setString(5, password); // SQL 쿼리 실행
+22:     pstmt.executeUpdate(); out.println("
+23:     <h2>회원 가입 성공!</h2>
+24:     "); } catch(Exception e) { e.printStackTrace(); out.println("
+25:     <h2>회원 가입 실패</h2>
+26:     "); } finally { if (pstmt != null) try { pstmt.close(); } catch(SQLException
+
+
+JSP 파일 [/conn.jsp]의 [23] 행에서 오류가 발생했습니다.
+Syntax error, insert "AssignmentOperator Expression" to complete Assignment
+20:     userId); pstmt.setString(2, address); pstmt.setString(3, email);
+21:     pstmt.setString(4, gender); pstmt.setString(5, password); // SQL 쿼리 실행
+22:     pstmt.executeUpdate(); out.println("
+23:     <h2>회원 가입 성공!</h2>
+24:     "); } catch(Exception e) { e.printStackTrace(); out.println("
+25:     <h2>회원 가입 실패</h2>
+26:     "); } finally { if (pstmt != null) try { pstmt.close(); } catch(SQLException
+
+
+JSP 파일 [/conn.jsp]의 [23] 행에서 오류가 발생했습니다.
+Syntax error, insert ";" to complete Statement
+20:     userId); pstmt.setString(2, address); pstmt.setString(3, email);
+21:     pstmt.setString(4, gender); pstmt.setString(5, password); // SQL 쿼리 실행
+22:     pstmt.executeUpdate(); out.println("
+23:     <h2>회원 가입 성공!</h2>
+24:     "); } catch(Exception e) { e.printStackTrace(); out.println("
+25:     <h2>회원 가입 실패</h2>
+26:     "); } finally { if (pstmt != null) try { pstmt.close(); } catch(SQLException
+
+
+JSP 파일 [/conn.jsp]의 [23] 행에서 오류가 발생했습니다.
+Syntax error, insert "Finally" to complete TryStatement
+20:     userId); pstmt.setString(2, address); pstmt.setString(3, email);
+21:     pstmt.setString(4, gender); pstmt.setString(5, password); // SQL 쿼리 실행
+22:     pstmt.executeUpdate(); out.println("
+23:     <h2>회원 가입 성공!</h2>
+24:     "); } catch(Exception e) { e.printStackTrace(); out.println("
+25:     <h2>회원 가입 실패</h2>
+26:     "); } finally { if (pstmt != null) try { pstmt.close(); } catch(SQLException
+
+
+Stacktrace:]을(를) 발생시켰습니다.
+	org.apache.jasper.JasperException: JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/conn.jsp]의 [15] 행에서 오류가 발생했습니다.
+Syntax error on token "=", delete this token
+12:     request.getParameter("password"); Connection conn = null; PreparedStatement
+13:     pstmt = null; try { // JDBC 드라이버 로드
+14:     Class.forName("oracle.jdbc.driver.OracleDriver"); // 데이터베이스 연결 conn
+15:     = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe",
+16:     "c##scot", "12341234"); // SQL 쿼리 준비 // 데이터베이스의 user_tbl 테이블
+17:     구조에 따라 필드명과 데이터 타입을 확인하고 적절히 수정하세요. String sql =
+18:     "INSERT INTO user_tbl (user_id, address, email, gender, password) VALUES (?,
+
+
+JSP 파일 [/conn.jsp]의 [17] 행에서 오류가 발생했습니다.
+구조에 cannot be resolved to a type
+14:     Class.forName("oracle.jdbc.driver.OracleDriver"); // 데이터베이스 연결 conn
+15:     = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe",
+16:     "c##scot", "12341234"); // SQL 쿼리 준비 // 데이터베이스의 user_tbl 테이블
+17:     구조에 따라 필드명과 데이터 타입을 확인하고 적절히 수정하세요. String sql =
+18:     "INSERT INTO user_tbl (user_id, address, email, gender, password) VALUES (?,
+19:     ?, ?, ?, ?)"; pstmt = conn.prepareStatement(sql); pstmt.setString(1,
+20:     userId); pstmt.setString(2, address); pstmt.setString(3, email);
+
+
+JSP 파일 [/conn.jsp]의 [17] 행에서 오류가 발생했습니다.
+Syntax error on token "필드명과", ; expected
+14:     Class.forName("oracle.jdbc.driver.OracleDriver"); // 데이터베이스 연결 conn
+15:     = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe",
+16:     "c##scot", "12341234"); // SQL 쿼리 준비 // 데이터베이스의 user_tbl 테이블
+17:     구조에 따라 필드명과 데이터 타입을 확인하고 적절히 수정하세요. String sql =
+18:     "INSERT INTO user_tbl (user_id, address, email, gender, password) VALUES (?,
+19:     ?, ?, ?, ?)"; pstmt = conn.prepareStatement(sql); pstmt.setString(1,
+20:     userId); pstmt.setString(2, address); pstmt.setString(3, email);
+
+
+JSP 파일 [/conn.jsp]의 [17] 행에서 오류가 발생했습니다.
+데이터 cannot be resolved to a type
+14:     Class.forName("oracle.jdbc.driver.OracleDriver"); // 데이터베이스 연결 conn
+15:     = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe",
+16:     "c##scot", "12341234"); // SQL 쿼리 준비 // 데이터베이스의 user_tbl 테이블
+17:     구조에 따라 필드명과 데이터 타입을 확인하고 적절히 수정하세요. String sql =
+18:     "INSERT INTO user_tbl (user_id, address, email, gender, password) VALUES (?,
+19:     ?, ?, ?, ?)"; pstmt = conn.prepareStatement(sql); pstmt.setString(1,
+20:     userId); pstmt.setString(2, address); pstmt.setString(3, email);
+
+
+JSP 파일 [/conn.jsp]의 [17] 행에서 오류가 발생했습니다.
+Syntax error on token "확인하고", ; expected
+14:     Class.forName("oracle.jdbc.driver.OracleDriver"); // 데이터베이스 연결 conn
+15:     = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe",
+16:     "c##scot", "12341234"); // SQL 쿼리 준비 // 데이터베이스의 user_tbl 테이블
+17:     구조에 따라 필드명과 데이터 타입을 확인하고 적절히 수정하세요. String sql =
+18:     "INSERT INTO user_tbl (user_id, address, email, gender, password) VALUES (?,
+19:     ?, ?, ?, ?)"; pstmt = conn.prepareStatement(sql); pstmt.setString(1,
+20:     userId); pstmt.setString(2, address); pstmt.setString(3, email);
+
+
+JSP 파일 [/conn.jsp]의 [17] 행에서 오류가 발생했습니다.
+적절히 cannot be resolved to a type
+14:     Class.forName("oracle.jdbc.driver.OracleDriver"); // 데이터베이스 연결 conn
+15:     = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe",
+16:     "c##scot", "12341234"); // SQL 쿼리 준비 // 데이터베이스의 user_tbl 테이블
+17:     구조에 따라 필드명과 데이터 타입을 확인하고 적절히 수정하세요. String sql =
+18:     "INSERT INTO user_tbl (user_id, address, email, gender, password) VALUES (?,
+19:     ?, ?, ?, ?)"; pstmt = conn.prepareStatement(sql); pstmt.setString(1,
+20:     userId); pstmt.setString(2, address); pstmt.setString(3, email);
+
+
+JSP 파일 [/conn.jsp]의 [17] 행에서 오류가 발생했습니다.
+Syntax error on token ".", ; expected
+14:     Class.forName("oracle.jdbc.driver.OracleDriver"); // 데이터베이스 연결 conn
+15:     = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe",
+16:     "c##scot", "12341234"); // SQL 쿼리 준비 // 데이터베이스의 user_tbl 테이블
+17:     구조에 따라 필드명과 데이터 타입을 확인하고 적절히 수정하세요. String sql =
+18:     "INSERT INTO user_tbl (user_id, address, email, gender, password) VALUES (?,
+19:     ?, ?, ?, ?)"; pstmt = conn.prepareStatement(sql); pstmt.setString(1,
+20:     userId); pstmt.setString(2, address); pstmt.setString(3, email);
+
+
+JSP 파일 [/conn.jsp]의 [18] 행에서 오류가 발생했습니다.
+String literal is not properly closed by a double-quote
+15:     = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe",
+16:     "c##scot", "12341234"); // SQL 쿼리 준비 // 데이터베이스의 user_tbl 테이블
+17:     구조에 따라 필드명과 데이터 타입을 확인하고 적절히 수정하세요. String sql =
+18:     "INSERT INTO user_tbl (user_id, address, email, gender, password) VALUES (?,
+19:     ?, ?, ?, ?)"; pstmt = conn.prepareStatement(sql); pstmt.setString(1,
+20:     userId); pstmt.setString(2, address); pstmt.setString(3, email);
+21:     pstmt.setString(4, gender); pstmt.setString(5, password); // SQL 쿼리 실행
+
+
+JSP 파일 [/conn.jsp]의 [18] 행에서 오류가 발생했습니다.
+String literal is not properly closed by a double-quote
+15:     = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe",
+16:     "c##scot", "12341234"); // SQL 쿼리 준비 // 데이터베이스의 user_tbl 테이블
+17:     구조에 따라 필드명과 데이터 타입을 확인하고 적절히 수정하세요. String sql =
+18:     "INSERT INTO user_tbl (user_id, address, email, gender, password) VALUES (?,
+19:     ?, ?, ?, ?)"; pstmt = conn.prepareStatement(sql); pstmt.setString(1,
+20:     userId); pstmt.setString(2, address); pstmt.setString(3, email);
+21:     pstmt.setString(4, gender); pstmt.setString(5, password); // SQL 쿼리 실행
+
+
+JSP 파일 [/conn.jsp]의 [18] 행에서 오류가 발생했습니다.
+Syntax error on tokens, delete these tokens
+15:     = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe",
+16:     "c##scot", "12341234"); // SQL 쿼리 준비 // 데이터베이스의 user_tbl 테이블
+17:     구조에 따라 필드명과 데이터 타입을 확인하고 적절히 수정하세요. String sql =
+18:     "INSERT INTO user_tbl (user_id, address, email, gender, password) VALUES (?,
+19:     ?, ?, ?, ?)"; pstmt = conn.prepareStatement(sql); pstmt.setString(1,
+20:     userId); pstmt.setString(2, address); pstmt.setString(3, email);
+21:     pstmt.setString(4, gender); pstmt.setString(5, password); // SQL 쿼리 실행
+
+
+JSP 파일 [/conn.jsp]의 [20] 행에서 오류가 발생했습니다.
+Syntax error on token "<", delete this token
+17:     구조에 따라 필드명과 데이터 타입을 확인하고 적절히 수정하세요. String sql =
+18:     "INSERT INTO user_tbl (user_id, address, email, gender, password) VALUES (?,
+19:     ?, ?, ?, ?)"; pstmt = conn.prepareStatement(sql); pstmt.setString(1,
+20:     userId); pstmt.setString(2, address); pstmt.setString(3, email);
+21:     pstmt.setString(4, gender); pstmt.setString(5, password); // SQL 쿼리 실행
+22:     pstmt.executeUpdate(); out.println("
+23:     <h2>회원 가입 성공!</h2>
+
+
+JSP 파일 [/conn.jsp]의 [20] 행에서 오류가 발생했습니다.
+Syntax error, insert ")" to complete MethodInvocation
+17:     구조에 따라 필드명과 데이터 타입을 확인하고 적절히 수정하세요. String sql =
+18:     "INSERT INTO user_tbl (user_id, address, email, gender, password) VALUES (?,
+19:     ?, ?, ?, ?)"; pstmt = conn.prepareStatement(sql); pstmt.setString(1,
+20:     userId); pstmt.setString(2, address); pstmt.setString(3, email);
+21:     pstmt.setString(4, gender); pstmt.setString(5, password); // SQL 쿼리 실행
+22:     pstmt.executeUpdate(); out.println("
+23:     <h2>회원 가입 성공!</h2>
+
+
+JSP 파일 [/conn.jsp]의 [20] 행에서 오류가 발생했습니다.
+Syntax error, insert ";" to complete Statement
+17:     구조에 따라 필드명과 데이터 타입을 확인하고 적절히 수정하세요. String sql =
+18:     "INSERT INTO user_tbl (user_id, address, email, gender, password) VALUES (?,
+19:     ?, ?, ?, ?)"; pstmt = conn.prepareStatement(sql); pstmt.setString(1,
+20:     userId); pstmt.setString(2, address); pstmt.setString(3, email);
+21:     pstmt.setString(4, gender); pstmt.setString(5, password); // SQL 쿼리 실행
+22:     pstmt.executeUpdate(); out.println("
+23:     <h2>회원 가입 성공!</h2>
+
+
+JSP 파일 [/conn.jsp]의 [20] 행에서 오류가 발생했습니다.
+Syntax error on tokens, ( expected instead
+17:     구조에 따라 필드명과 데이터 타입을 확인하고 적절히 수정하세요. String sql =
+18:     "INSERT INTO user_tbl (user_id, address, email, gender, password) VALUES (?,
+19:     ?, ?, ?, ?)"; pstmt = conn.prepareStatement(sql); pstmt.setString(1,
+20:     userId); pstmt.setString(2, address); pstmt.setString(3, email);
+21:     pstmt.setString(4, gender); pstmt.setString(5, password); // SQL 쿼리 실행
+22:     pstmt.executeUpdate(); out.println("
+23:     <h2>회원 가입 성공!</h2>
+
+
+JSP 파일 [/conn.jsp]의 [20] 행에서 오류가 발생했습니다.
+Syntax error on token ">", -> expected
+17:     구조에 따라 필드명과 데이터 타입을 확인하고 적절히 수정하세요. String sql =
+18:     "INSERT INTO user_tbl (user_id, address, email, gender, password) VALUES (?,
+19:     ?, ?, ?, ?)"; pstmt = conn.prepareStatement(sql); pstmt.setString(1,
+20:     userId); pstmt.setString(2, address); pstmt.setString(3, email);
+21:     pstmt.setString(4, gender); pstmt.setString(5, password); // SQL 쿼리 실행
+22:     pstmt.executeUpdate(); out.println("
+23:     <h2>회원 가입 성공!</h2>
+
+
+JSP 파일 [/conn.jsp]의 [22] 행에서 오류가 발생했습니다.
+Syntax error on token "가입", -> expected
+19:     ?, ?, ?, ?)"; pstmt = conn.prepareStatement(sql); pstmt.setString(1,
+20:     userId); pstmt.setString(2, address); pstmt.setString(3, email);
+21:     pstmt.setString(4, gender); pstmt.setString(5, password); // SQL 쿼리 실행
+22:     pstmt.executeUpdate(); out.println("
+23:     <h2>회원 가입 성공!</h2>
+24:     "); } catch(Exception e) { e.printStackTrace(); out.println("
+25:     <h2>회원 가입 실패</h2>
+
+
+JSP 파일 [/conn.jsp]의 [22] 행에서 오류가 발생했습니다.
+Syntax error on token "/", invalid (
+19:     ?, ?, ?, ?)"; pstmt = conn.prepareStatement(sql); pstmt.setString(1,
+20:     userId); pstmt.setString(2, address); pstmt.setString(3, email);
+21:     pstmt.setString(4, gender); pstmt.setString(5, password); // SQL 쿼리 실행
+22:     pstmt.executeUpdate(); out.println("
+23:     <h2>회원 가입 성공!</h2>
+24:     "); } catch(Exception e) { e.printStackTrace(); out.println("
+25:     <h2>회원 가입 실패</h2>
+
+
+JSP 파일 [/conn.jsp]의 [23] 행에서 오류가 발생했습니다.
+Syntax error, insert ")" to complete Expression
+20:     userId); pstmt.setString(2, address); pstmt.setString(3, email);
+21:     pstmt.setString(4, gender); pstmt.setString(5, password); // SQL 쿼리 실행
+22:     pstmt.executeUpdate(); out.println("
+23:     <h2>회원 가입 성공!</h2>
+24:     "); } catch(Exception e) { e.printStackTrace(); out.println("
+25:     <h2>회원 가입 실패</h2>
+26:     "); } finally { if (pstmt != null) try { pstmt.close(); } catch(SQLException
+
+
+JSP 파일 [/conn.jsp]의 [23] 행에서 오류가 발생했습니다.
+Syntax error, insert "AssignmentOperator Expression" to complete Assignment
+20:     userId); pstmt.setString(2, address); pstmt.setString(3, email);
+21:     pstmt.setString(4, gender); pstmt.setString(5, password); // SQL 쿼리 실행
+22:     pstmt.executeUpdate(); out.println("
+23:     <h2>회원 가입 성공!</h2>
+24:     "); } catch(Exception e) { e.printStackTrace(); out.println("
+25:     <h2>회원 가입 실패</h2>
+26:     "); } finally { if (pstmt != null) try { pstmt.close(); } catch(SQLException
+
+
+JSP 파일 [/conn.jsp]의 [23] 행에서 오류가 발생했습니다.
+Syntax error, insert ";" to complete Statement
+20:     userId); pstmt.setString(2, address); pstmt.setString(3, email);
+21:     pstmt.setString(4, gender); pstmt.setString(5, password); // SQL 쿼리 실행
+22:     pstmt.executeUpdate(); out.println("
+23:     <h2>회원 가입 성공!</h2>
+24:     "); } catch(Exception e) { e.printStackTrace(); out.println("
+25:     <h2>회원 가입 실패</h2>
+26:     "); } finally { if (pstmt != null) try { pstmt.close(); } catch(SQLException
+
+
+JSP 파일 [/conn.jsp]의 [23] 행에서 오류가 발생했습니다.
+Syntax error, insert "Finally" to complete TryStatement
+20:     userId); pstmt.setString(2, address); pstmt.setString(3, email);
+21:     pstmt.setString(4, gender); pstmt.setString(5, password); // SQL 쿼리 실행
+22:     pstmt.executeUpdate(); out.println("
+23:     <h2>회원 가입 성공!</h2>
+24:     "); } catch(Exception e) { e.printStackTrace(); out.println("
+25:     <h2>회원 가입 실패</h2>
+26:     "); } finally { if (pstmt != null) try { pstmt.close(); } catch(SQLException
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:214)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:542)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:398)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:368)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:352)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:399)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:379)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:327)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:210)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:154)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:179)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:154)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:670)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:928)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1786)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+04-May-2024 10:30:02.736 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+04-May-2024 10:30:02.736 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+04-May-2024 10:30:02.739 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@b77b0a0')
+04-May-2024 10:40:19.863 SEVERE [http-nio-8080-exec-9] org.apache.catalina.core.StandardWrapperValve.invoke 경로 []의 컨텍스트 내의 서블릿 [jsp]을(를) 위한 Servlet.service() 호출이, 근본 원인(root cause)과 함께, 예외 [JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/product.jsp]의 [40] 행에서 오류가 발생했습니다.
+Syntax error, insert "while ( Expression ) ;" to complete BlockStatements
+37:                     String description = rs.getString("DESCRIPTION");
+38:                     int price = rs.getInt("PRICE");
+39:                     int productCount = rs.getInt("PRODUCT_COUNT");
+40:                 }
+41:     %>
+42:     <tr>
+43:         <td><%= id %></td>
+
+
+JSP 파일 [/product.jsp]의 [43] 행에서 오류가 발생했습니다.
+id cannot be resolved to a variable
+40:                 }
+41:     %>
+42:     <tr>
+43:         <td><%= id %></td>
+44:         <td><%= productName %></td>
+45:         <td><%= description %></td>
+46:         <td><%= price %></td>
+
+
+JSP 파일 [/product.jsp]의 [44] 행에서 오류가 발생했습니다.
+productName cannot be resolved to a variable
+41:     %>
+42:     <tr>
+43:         <td><%= id %></td>
+44:         <td><%= productName %></td>
+45:         <td><%= description %></td>
+46:         <td><%= price %></td>
+47:         <td><%= productCount %></td>
+
+
+JSP 파일 [/product.jsp]의 [45] 행에서 오류가 발생했습니다.
+description cannot be resolved to a variable
+42:     <tr>
+43:         <td><%= id %></td>
+44:         <td><%= productName %></td>
+45:         <td><%= description %></td>
+46:         <td><%= price %></td>
+47:         <td><%= productCount %></td>
+48:     </tr>
+
+
+JSP 파일 [/product.jsp]의 [46] 행에서 오류가 발생했습니다.
+price cannot be resolved to a variable
+43:         <td><%= id %></td>
+44:         <td><%= productName %></td>
+45:         <td><%= description %></td>
+46:         <td><%= price %></td>
+47:         <td><%= productCount %></td>
+48:     </tr>
+49:     <%
+
+
+JSP 파일 [/product.jsp]의 [47] 행에서 오류가 발생했습니다.
+productCount cannot be resolved to a variable
+44:         <td><%= productName %></td>
+45:         <td><%= description %></td>
+46:         <td><%= price %></td>
+47:         <td><%= productCount %></td>
+48:     </tr>
+49:     <%
+50:                  while (rs.next());
+
+
+Stacktrace:]을(를) 발생시켰습니다.
+	org.apache.jasper.JasperException: JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/product.jsp]의 [40] 행에서 오류가 발생했습니다.
+Syntax error, insert "while ( Expression ) ;" to complete BlockStatements
+37:                     String description = rs.getString("DESCRIPTION");
+38:                     int price = rs.getInt("PRICE");
+39:                     int productCount = rs.getInt("PRODUCT_COUNT");
+40:                 }
+41:     %>
+42:     <tr>
+43:         <td><%= id %></td>
+
+
+JSP 파일 [/product.jsp]의 [43] 행에서 오류가 발생했습니다.
+id cannot be resolved to a variable
+40:                 }
+41:     %>
+42:     <tr>
+43:         <td><%= id %></td>
+44:         <td><%= productName %></td>
+45:         <td><%= description %></td>
+46:         <td><%= price %></td>
+
+
+JSP 파일 [/product.jsp]의 [44] 행에서 오류가 발생했습니다.
+productName cannot be resolved to a variable
+41:     %>
+42:     <tr>
+43:         <td><%= id %></td>
+44:         <td><%= productName %></td>
+45:         <td><%= description %></td>
+46:         <td><%= price %></td>
+47:         <td><%= productCount %></td>
+
+
+JSP 파일 [/product.jsp]의 [45] 행에서 오류가 발생했습니다.
+description cannot be resolved to a variable
+42:     <tr>
+43:         <td><%= id %></td>
+44:         <td><%= productName %></td>
+45:         <td><%= description %></td>
+46:         <td><%= price %></td>
+47:         <td><%= productCount %></td>
+48:     </tr>
+
+
+JSP 파일 [/product.jsp]의 [46] 행에서 오류가 발생했습니다.
+price cannot be resolved to a variable
+43:         <td><%= id %></td>
+44:         <td><%= productName %></td>
+45:         <td><%= description %></td>
+46:         <td><%= price %></td>
+47:         <td><%= productCount %></td>
+48:     </tr>
+49:     <%
+
+
+JSP 파일 [/product.jsp]의 [47] 행에서 오류가 발생했습니다.
+productCount cannot be resolved to a variable
+44:         <td><%= productName %></td>
+45:         <td><%= description %></td>
+46:         <td><%= price %></td>
+47:         <td><%= productCount %></td>
+48:     </tr>
+49:     <%
+50:                  while (rs.next());
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:214)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:542)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:398)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:368)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:352)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:399)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:379)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:327)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:210)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:154)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:179)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:154)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:670)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:928)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1786)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+04-May-2024 10:41:26.393 SEVERE [http-nio-8080-exec-1] org.apache.catalina.core.StandardWrapperValve.invoke 경로 []의 컨텍스트 내의 서블릿 [jsp]을(를) 위한 Servlet.service() 호출이, 근본 원인(root cause)과 함께, 예외 [JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/product.jsp]의 [40] 행에서 오류가 발생했습니다.
+Syntax error, insert "while ( Expression ) ;" to complete BlockStatements
+37:                     String description = rs.getString("DESCRIPTION");
+38:                     int price = rs.getInt("PRICE");
+39:                     int productCount = rs.getInt("PRODUCT_COUNT");
+40:                 }
+41:     %>
+42:     <tr>
+43:         <td><%= id %></td>
+
+
+JSP 파일 [/product.jsp]의 [43] 행에서 오류가 발생했습니다.
+id cannot be resolved to a variable
+40:                 }
+41:     %>
+42:     <tr>
+43:         <td><%= id %></td>
+44:         <td><%= productName %></td>
+45:         <td><%= description %></td>
+46:         <td><%= price %></td>
+
+
+JSP 파일 [/product.jsp]의 [44] 행에서 오류가 발생했습니다.
+productName cannot be resolved to a variable
+41:     %>
+42:     <tr>
+43:         <td><%= id %></td>
+44:         <td><%= productName %></td>
+45:         <td><%= description %></td>
+46:         <td><%= price %></td>
+47:         <td><%= productCount %></td>
+
+
+JSP 파일 [/product.jsp]의 [45] 행에서 오류가 발생했습니다.
+description cannot be resolved to a variable
+42:     <tr>
+43:         <td><%= id %></td>
+44:         <td><%= productName %></td>
+45:         <td><%= description %></td>
+46:         <td><%= price %></td>
+47:         <td><%= productCount %></td>
+48:     </tr>
+
+
+JSP 파일 [/product.jsp]의 [46] 행에서 오류가 발생했습니다.
+price cannot be resolved to a variable
+43:         <td><%= id %></td>
+44:         <td><%= productName %></td>
+45:         <td><%= description %></td>
+46:         <td><%= price %></td>
+47:         <td><%= productCount %></td>
+48:     </tr>
+49:     <%
+
+
+JSP 파일 [/product.jsp]의 [47] 행에서 오류가 발생했습니다.
+productCount cannot be resolved to a variable
+44:         <td><%= productName %></td>
+45:         <td><%= description %></td>
+46:         <td><%= price %></td>
+47:         <td><%= productCount %></td>
+48:     </tr>
+49:     <%
+50:                  while (rs.next());
+
+
+Stacktrace:]을(를) 발생시켰습니다.
+	org.apache.jasper.JasperException: JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/product.jsp]의 [40] 행에서 오류가 발생했습니다.
+Syntax error, insert "while ( Expression ) ;" to complete BlockStatements
+37:                     String description = rs.getString("DESCRIPTION");
+38:                     int price = rs.getInt("PRICE");
+39:                     int productCount = rs.getInt("PRODUCT_COUNT");
+40:                 }
+41:     %>
+42:     <tr>
+43:         <td><%= id %></td>
+
+
+JSP 파일 [/product.jsp]의 [43] 행에서 오류가 발생했습니다.
+id cannot be resolved to a variable
+40:                 }
+41:     %>
+42:     <tr>
+43:         <td><%= id %></td>
+44:         <td><%= productName %></td>
+45:         <td><%= description %></td>
+46:         <td><%= price %></td>
+
+
+JSP 파일 [/product.jsp]의 [44] 행에서 오류가 발생했습니다.
+productName cannot be resolved to a variable
+41:     %>
+42:     <tr>
+43:         <td><%= id %></td>
+44:         <td><%= productName %></td>
+45:         <td><%= description %></td>
+46:         <td><%= price %></td>
+47:         <td><%= productCount %></td>
+
+
+JSP 파일 [/product.jsp]의 [45] 행에서 오류가 발생했습니다.
+description cannot be resolved to a variable
+42:     <tr>
+43:         <td><%= id %></td>
+44:         <td><%= productName %></td>
+45:         <td><%= description %></td>
+46:         <td><%= price %></td>
+47:         <td><%= productCount %></td>
+48:     </tr>
+
+
+JSP 파일 [/product.jsp]의 [46] 행에서 오류가 발생했습니다.
+price cannot be resolved to a variable
+43:         <td><%= id %></td>
+44:         <td><%= productName %></td>
+45:         <td><%= description %></td>
+46:         <td><%= price %></td>
+47:         <td><%= productCount %></td>
+48:     </tr>
+49:     <%
+
+
+JSP 파일 [/product.jsp]의 [47] 행에서 오류가 발생했습니다.
+productCount cannot be resolved to a variable
+44:         <td><%= productName %></td>
+45:         <td><%= description %></td>
+46:         <td><%= price %></td>
+47:         <td><%= productCount %></td>
+48:     </tr>
+49:     <%
+50:                  while (rs.next());
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:214)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:542)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:398)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:368)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:352)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:399)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:379)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:327)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:210)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:154)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:179)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:154)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:670)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:928)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1786)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+04-May-2024 10:43:40.184 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+04-May-2024 10:43:40.184 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+04-May-2024 10:43:40.186 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@7221539')
+04-May-2024 10:44:44.044 SEVERE [http-nio-8080-exec-4] org.apache.catalina.core.StandardWrapperValve.invoke 경로 []의 컨텍스트 내의 서블릿 [jsp]을(를) 위한 Servlet.service() 호출이, 근본 원인(root cause)과 함께, 예외 [JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/product.jsp]의 [30] 행에서 오류가 발생했습니다.
+Syntax error on token(s), misplaced construct(s)
+27:         conn = DriverManager.getConnection(url, user, pass);
+28:         stmt = conn.createStatement();
+29:         rs = stmt.executeQuery(query);
+30:         <tr><td colspan='5'>rs</td></tr>
+31:         boolean hasResults = false;
+32: 
+33:         while (rs.next()) {
+
+
+JSP 파일 [/product.jsp]의 [30] 행에서 오류가 발생했습니다.
+Syntax error, insert ">" to complete ReferenceType1
+27:         conn = DriverManager.getConnection(url, user, pass);
+28:         stmt = conn.createStatement();
+29:         rs = stmt.executeQuery(query);
+30:         <tr><td colspan='5'>rs</td></tr>
+31:         boolean hasResults = false;
+32: 
+33:         while (rs.next()) {
+
+
+JSP 파일 [/product.jsp]의 [30] 행에서 오류가 발생했습니다.
+Syntax error, insert "super ( ) ;" to complete Statement
+27:         conn = DriverManager.getConnection(url, user, pass);
+28:         stmt = conn.createStatement();
+29:         rs = stmt.executeQuery(query);
+30:         <tr><td colspan='5'>rs</td></tr>
+31:         boolean hasResults = false;
+32: 
+33:         while (rs.next()) {
+
+
+JSP 파일 [/product.jsp]의 [30] 행에서 오류가 발생했습니다.
+td cannot be resolved to a type
+27:         conn = DriverManager.getConnection(url, user, pass);
+28:         stmt = conn.createStatement();
+29:         rs = stmt.executeQuery(query);
+30:         <tr><td colspan='5'>rs</td></tr>
+31:         boolean hasResults = false;
+32: 
+33:         while (rs.next()) {
+
+
+JSP 파일 [/product.jsp]의 [30] 행에서 오류가 발생했습니다.
+Constructor call must be the first statement in a constructor
+27:         conn = DriverManager.getConnection(url, user, pass);
+28:         stmt = conn.createStatement();
+29:         rs = stmt.executeQuery(query);
+30:         <tr><td colspan='5'>rs</td></tr>
+31:         boolean hasResults = false;
+32: 
+33:         while (rs.next()) {
+
+
+JSP 파일 [/product.jsp]의 [30] 행에서 오류가 발생했습니다.
+Syntax error on token "/", delete this token
+27:         conn = DriverManager.getConnection(url, user, pass);
+28:         stmt = conn.createStatement();
+29:         rs = stmt.executeQuery(query);
+30:         <tr><td colspan='5'>rs</td></tr>
+31:         boolean hasResults = false;
+32: 
+33:         while (rs.next()) {
+
+
+JSP 파일 [/product.jsp]의 [30] 행에서 오류가 발생했습니다.
+Syntax error on token "<", invalid Expression
+27:         conn = DriverManager.getConnection(url, user, pass);
+28:         stmt = conn.createStatement();
+29:         rs = stmt.executeQuery(query);
+30:         <tr><td colspan='5'>rs</td></tr>
+31:         boolean hasResults = false;
+32: 
+33:         while (rs.next()) {
+
+
+JSP 파일 [/product.jsp]의 [31] 행에서 오류가 발생했습니다.
+Syntax error, insert ". class" to complete Expression
+28:         stmt = conn.createStatement();
+29:         rs = stmt.executeQuery(query);
+30:         <tr><td colspan='5'>rs</td></tr>
+31:         boolean hasResults = false;
+32: 
+33:         while (rs.next()) {
+34:             hasResults = true;
+
+
+JSP 파일 [/product.jsp]의 [31] 행에서 오류가 발생했습니다.
+Syntax error, insert ";" to complete Statement
+28:         stmt = conn.createStatement();
+29:         rs = stmt.executeQuery(query);
+30:         <tr><td colspan='5'>rs</td></tr>
+31:         boolean hasResults = false;
+32: 
+33:         while (rs.next()) {
+34:             hasResults = true;
+
+
+Stacktrace:]을(를) 발생시켰습니다.
+	org.apache.jasper.JasperException: JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/product.jsp]의 [30] 행에서 오류가 발생했습니다.
+Syntax error on token(s), misplaced construct(s)
+27:         conn = DriverManager.getConnection(url, user, pass);
+28:         stmt = conn.createStatement();
+29:         rs = stmt.executeQuery(query);
+30:         <tr><td colspan='5'>rs</td></tr>
+31:         boolean hasResults = false;
+32: 
+33:         while (rs.next()) {
+
+
+JSP 파일 [/product.jsp]의 [30] 행에서 오류가 발생했습니다.
+Syntax error, insert ">" to complete ReferenceType1
+27:         conn = DriverManager.getConnection(url, user, pass);
+28:         stmt = conn.createStatement();
+29:         rs = stmt.executeQuery(query);
+30:         <tr><td colspan='5'>rs</td></tr>
+31:         boolean hasResults = false;
+32: 
+33:         while (rs.next()) {
+
+
+JSP 파일 [/product.jsp]의 [30] 행에서 오류가 발생했습니다.
+Syntax error, insert "super ( ) ;" to complete Statement
+27:         conn = DriverManager.getConnection(url, user, pass);
+28:         stmt = conn.createStatement();
+29:         rs = stmt.executeQuery(query);
+30:         <tr><td colspan='5'>rs</td></tr>
+31:         boolean hasResults = false;
+32: 
+33:         while (rs.next()) {
+
+
+JSP 파일 [/product.jsp]의 [30] 행에서 오류가 발생했습니다.
+td cannot be resolved to a type
+27:         conn = DriverManager.getConnection(url, user, pass);
+28:         stmt = conn.createStatement();
+29:         rs = stmt.executeQuery(query);
+30:         <tr><td colspan='5'>rs</td></tr>
+31:         boolean hasResults = false;
+32: 
+33:         while (rs.next()) {
+
+
+JSP 파일 [/product.jsp]의 [30] 행에서 오류가 발생했습니다.
+Constructor call must be the first statement in a constructor
+27:         conn = DriverManager.getConnection(url, user, pass);
+28:         stmt = conn.createStatement();
+29:         rs = stmt.executeQuery(query);
+30:         <tr><td colspan='5'>rs</td></tr>
+31:         boolean hasResults = false;
+32: 
+33:         while (rs.next()) {
+
+
+JSP 파일 [/product.jsp]의 [30] 행에서 오류가 발생했습니다.
+Syntax error on token "/", delete this token
+27:         conn = DriverManager.getConnection(url, user, pass);
+28:         stmt = conn.createStatement();
+29:         rs = stmt.executeQuery(query);
+30:         <tr><td colspan='5'>rs</td></tr>
+31:         boolean hasResults = false;
+32: 
+33:         while (rs.next()) {
+
+
+JSP 파일 [/product.jsp]의 [30] 행에서 오류가 발생했습니다.
+Syntax error on token "<", invalid Expression
+27:         conn = DriverManager.getConnection(url, user, pass);
+28:         stmt = conn.createStatement();
+29:         rs = stmt.executeQuery(query);
+30:         <tr><td colspan='5'>rs</td></tr>
+31:         boolean hasResults = false;
+32: 
+33:         while (rs.next()) {
+
+
+JSP 파일 [/product.jsp]의 [31] 행에서 오류가 발생했습니다.
+Syntax error, insert ". class" to complete Expression
+28:         stmt = conn.createStatement();
+29:         rs = stmt.executeQuery(query);
+30:         <tr><td colspan='5'>rs</td></tr>
+31:         boolean hasResults = false;
+32: 
+33:         while (rs.next()) {
+34:             hasResults = true;
+
+
+JSP 파일 [/product.jsp]의 [31] 행에서 오류가 발생했습니다.
+Syntax error, insert ";" to complete Statement
+28:         stmt = conn.createStatement();
+29:         rs = stmt.executeQuery(query);
+30:         <tr><td colspan='5'>rs</td></tr>
+31:         boolean hasResults = false;
+32: 
+33:         while (rs.next()) {
+34:             hasResults = true;
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:214)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:542)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:398)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:368)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:352)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:399)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:379)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:327)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:210)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:154)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:179)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:154)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:670)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:928)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1786)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+04-May-2024 10:45:37.705 SEVERE [http-nio-8080-exec-6] org.apache.catalina.core.StandardWrapperValve.invoke 경로 []의 컨텍스트 내의 서블릿 [jsp]을(를) 위한 Servlet.service() 호출이, 근본 원인(root cause)과 함께, 예외 [JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/product.jsp]의 [30] 행에서 오류가 발생했습니다.
+Syntax error on token(s), misplaced construct(s)
+27:         conn = DriverManager.getConnection(url, user, pass);
+28:         stmt = conn.createStatement();
+29:         rs = stmt.executeQuery(query);
+30:         <tr><td colspan='5'>rs.getString("PRODUCT_NAME")</td></tr>
+31:         boolean hasResults = false;
+32: 
+33:         while (rs.next()) {
+
+
+JSP 파일 [/product.jsp]의 [30] 행에서 오류가 발생했습니다.
+Syntax error, insert ">" to complete ReferenceType1
+27:         conn = DriverManager.getConnection(url, user, pass);
+28:         stmt = conn.createStatement();
+29:         rs = stmt.executeQuery(query);
+30:         <tr><td colspan='5'>rs.getString("PRODUCT_NAME")</td></tr>
+31:         boolean hasResults = false;
+32: 
+33:         while (rs.next()) {
+
+
+JSP 파일 [/product.jsp]의 [30] 행에서 오류가 발생했습니다.
+Syntax error, insert "super ( ) ;" to complete Statement
+27:         conn = DriverManager.getConnection(url, user, pass);
+28:         stmt = conn.createStatement();
+29:         rs = stmt.executeQuery(query);
+30:         <tr><td colspan='5'>rs.getString("PRODUCT_NAME")</td></tr>
+31:         boolean hasResults = false;
+32: 
+33:         while (rs.next()) {
+
+
+JSP 파일 [/product.jsp]의 [30] 행에서 오류가 발생했습니다.
+td cannot be resolved to a type
+27:         conn = DriverManager.getConnection(url, user, pass);
+28:         stmt = conn.createStatement();
+29:         rs = stmt.executeQuery(query);
+30:         <tr><td colspan='5'>rs.getString("PRODUCT_NAME")</td></tr>
+31:         boolean hasResults = false;
+32: 
+33:         while (rs.next()) {
+
+
+JSP 파일 [/product.jsp]의 [30] 행에서 오류가 발생했습니다.
+Constructor call must be the first statement in a constructor
+27:         conn = DriverManager.getConnection(url, user, pass);
+28:         stmt = conn.createStatement();
+29:         rs = stmt.executeQuery(query);
+30:         <tr><td colspan='5'>rs.getString("PRODUCT_NAME")</td></tr>
+31:         boolean hasResults = false;
+32: 
+33:         while (rs.next()) {
+
+
+JSP 파일 [/product.jsp]의 [30] 행에서 오류가 발생했습니다.
+Syntax error on token "/", delete this token
+27:         conn = DriverManager.getConnection(url, user, pass);
+28:         stmt = conn.createStatement();
+29:         rs = stmt.executeQuery(query);
+30:         <tr><td colspan='5'>rs.getString("PRODUCT_NAME")</td></tr>
+31:         boolean hasResults = false;
+32: 
+33:         while (rs.next()) {
+
+
+JSP 파일 [/product.jsp]의 [30] 행에서 오류가 발생했습니다.
+Syntax error on token "<", invalid Expression
+27:         conn = DriverManager.getConnection(url, user, pass);
+28:         stmt = conn.createStatement();
+29:         rs = stmt.executeQuery(query);
+30:         <tr><td colspan='5'>rs.getString("PRODUCT_NAME")</td></tr>
+31:         boolean hasResults = false;
+32: 
+33:         while (rs.next()) {
+
+
+JSP 파일 [/product.jsp]의 [31] 행에서 오류가 발생했습니다.
+Syntax error, insert ". class" to complete Expression
+28:         stmt = conn.createStatement();
+29:         rs = stmt.executeQuery(query);
+30:         <tr><td colspan='5'>rs.getString("PRODUCT_NAME")</td></tr>
+31:         boolean hasResults = false;
+32: 
+33:         while (rs.next()) {
+34:             hasResults = true;
+
+
+JSP 파일 [/product.jsp]의 [31] 행에서 오류가 발생했습니다.
+Syntax error, insert ";" to complete Statement
+28:         stmt = conn.createStatement();
+29:         rs = stmt.executeQuery(query);
+30:         <tr><td colspan='5'>rs.getString("PRODUCT_NAME")</td></tr>
+31:         boolean hasResults = false;
+32: 
+33:         while (rs.next()) {
+34:             hasResults = true;
+
+
+Stacktrace:]을(를) 발생시켰습니다.
+	org.apache.jasper.JasperException: JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/product.jsp]의 [30] 행에서 오류가 발생했습니다.
+Syntax error on token(s), misplaced construct(s)
+27:         conn = DriverManager.getConnection(url, user, pass);
+28:         stmt = conn.createStatement();
+29:         rs = stmt.executeQuery(query);
+30:         <tr><td colspan='5'>rs.getString("PRODUCT_NAME")</td></tr>
+31:         boolean hasResults = false;
+32: 
+33:         while (rs.next()) {
+
+
+JSP 파일 [/product.jsp]의 [30] 행에서 오류가 발생했습니다.
+Syntax error, insert ">" to complete ReferenceType1
+27:         conn = DriverManager.getConnection(url, user, pass);
+28:         stmt = conn.createStatement();
+29:         rs = stmt.executeQuery(query);
+30:         <tr><td colspan='5'>rs.getString("PRODUCT_NAME")</td></tr>
+31:         boolean hasResults = false;
+32: 
+33:         while (rs.next()) {
+
+
+JSP 파일 [/product.jsp]의 [30] 행에서 오류가 발생했습니다.
+Syntax error, insert "super ( ) ;" to complete Statement
+27:         conn = DriverManager.getConnection(url, user, pass);
+28:         stmt = conn.createStatement();
+29:         rs = stmt.executeQuery(query);
+30:         <tr><td colspan='5'>rs.getString("PRODUCT_NAME")</td></tr>
+31:         boolean hasResults = false;
+32: 
+33:         while (rs.next()) {
+
+
+JSP 파일 [/product.jsp]의 [30] 행에서 오류가 발생했습니다.
+td cannot be resolved to a type
+27:         conn = DriverManager.getConnection(url, user, pass);
+28:         stmt = conn.createStatement();
+29:         rs = stmt.executeQuery(query);
+30:         <tr><td colspan='5'>rs.getString("PRODUCT_NAME")</td></tr>
+31:         boolean hasResults = false;
+32: 
+33:         while (rs.next()) {
+
+
+JSP 파일 [/product.jsp]의 [30] 행에서 오류가 발생했습니다.
+Constructor call must be the first statement in a constructor
+27:         conn = DriverManager.getConnection(url, user, pass);
+28:         stmt = conn.createStatement();
+29:         rs = stmt.executeQuery(query);
+30:         <tr><td colspan='5'>rs.getString("PRODUCT_NAME")</td></tr>
+31:         boolean hasResults = false;
+32: 
+33:         while (rs.next()) {
+
+
+JSP 파일 [/product.jsp]의 [30] 행에서 오류가 발생했습니다.
+Syntax error on token "/", delete this token
+27:         conn = DriverManager.getConnection(url, user, pass);
+28:         stmt = conn.createStatement();
+29:         rs = stmt.executeQuery(query);
+30:         <tr><td colspan='5'>rs.getString("PRODUCT_NAME")</td></tr>
+31:         boolean hasResults = false;
+32: 
+33:         while (rs.next()) {
+
+
+JSP 파일 [/product.jsp]의 [30] 행에서 오류가 발생했습니다.
+Syntax error on token "<", invalid Expression
+27:         conn = DriverManager.getConnection(url, user, pass);
+28:         stmt = conn.createStatement();
+29:         rs = stmt.executeQuery(query);
+30:         <tr><td colspan='5'>rs.getString("PRODUCT_NAME")</td></tr>
+31:         boolean hasResults = false;
+32: 
+33:         while (rs.next()) {
+
+
+JSP 파일 [/product.jsp]의 [31] 행에서 오류가 발생했습니다.
+Syntax error, insert ". class" to complete Expression
+28:         stmt = conn.createStatement();
+29:         rs = stmt.executeQuery(query);
+30:         <tr><td colspan='5'>rs.getString("PRODUCT_NAME")</td></tr>
+31:         boolean hasResults = false;
+32: 
+33:         while (rs.next()) {
+34:             hasResults = true;
+
+
+JSP 파일 [/product.jsp]의 [31] 행에서 오류가 발생했습니다.
+Syntax error, insert ";" to complete Statement
+28:         stmt = conn.createStatement();
+29:         rs = stmt.executeQuery(query);
+30:         <tr><td colspan='5'>rs.getString("PRODUCT_NAME")</td></tr>
+31:         boolean hasResults = false;
+32: 
+33:         while (rs.next()) {
+34:             hasResults = true;
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:214)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:542)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:398)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:368)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:352)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:399)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:379)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:327)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:210)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:154)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:179)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:154)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:670)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:928)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1786)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:834)
