@@ -11,11 +11,13 @@
 </form>
 <form action="viewOrders.jsp" method="get">
     <button type="submit">주문 조회하기</button>
+</form>
 <form action="register.html" method="get">
     <button type="submit">회원가입</button>
+</form>
 <form action="product.jsp" method="get">
     <button type="submit">상품 조회하기</button>
-
+</form>
 </form>
 </body>
 </html>
